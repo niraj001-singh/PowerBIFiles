@@ -1,0 +1,24 @@
+table 'Refresh Stats'
+	isHidden
+	lineageTag: 4fcfbe32-4835-406c-9659-7e2b38b5a04f
+	sourceLineageTag: 9578ffab-7bde-46d8-ba4f-486559d24e82
+
+	column 'Last Refresh'
+		dataType: string
+		isHidden
+		lineageTag: d5274030-f30f-40e1-9b95-8e5db7f0f656
+		sourceLineageTag: fb38f4d9-5a54-42d5-9aef-7ece73930cb4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last Refresh
+
+		annotation SummarizationSetBy = User
+
+	partition 'Refresh Stats' = entity
+		mode: directQuery
+		source
+			entityName: Refresh Stats
+			expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	annotation PBI_ResultType = Exception
+

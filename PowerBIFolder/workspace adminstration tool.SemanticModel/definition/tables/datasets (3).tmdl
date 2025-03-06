@@ -1,0 +1,26 @@
+table 'datasets (3)'
+	lineageTag: 86fd1d29-af13-455e-b940-87317b96d9a3
+
+	column 'datasets (3)'
+		dataType: string
+		lineageTag: 6625747f-eb8a-450f-a007-d319d0e1ed7b
+		summarizeBy: none
+		sourceColumn: datasets (3)
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'datasets (3)' = m
+		mode: import
+		source =
+				let
+				    Source = datasets,
+				    count=Table.RowCount(Source),
+				    fun=loadDatasetusers,
+				    users=List.Generate(()=>[index=0,Funct=fun(Source{0}[value.id])],each [index]<count,each [index=[index]+1,Funct=fun(Source{[index]+1}[value.id])])
+				in
+				    users
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = List
+

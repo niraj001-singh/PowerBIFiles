@@ -1,0 +1,101 @@
+table PowerBIRefreshesHistory
+	lineageTag: 0f6b5e92-8bf5-4e5d-b2dc-e83255719c37
+
+	column requestId
+		dataType: string
+		lineageTag: 4154cb75-7aa9-49d4-8076-610378404d60
+		summarizeBy: none
+		sourceColumn: requestId
+
+		annotation SummarizationSetBy = Automatic
+
+	column id
+		dataType: int64
+		formatString: 0
+		lineageTag: c3e32ad1-b608-4251-876c-74e86d89a316
+		summarizeBy: sum
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column refreshType
+		dataType: string
+		lineageTag: d99a9220-1212-479c-b59a-32e20f2f5c30
+		summarizeBy: none
+		sourceColumn: refreshType
+
+		annotation SummarizationSetBy = Automatic
+
+	column refreshStartTime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 79592297-54d2-40be-a8c4-e37e52f4cfe1
+		summarizeBy: none
+		sourceColumn: refreshStartTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column refreshEndTime
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 62c729c2-f6f2-4d93-9b99-4dfb5c04f5e1
+		summarizeBy: none
+		sourceColumn: refreshEndTime
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: string
+		lineageTag: 7e96746c-00b2-4df9-8f4e-41a8a099b097
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column refreshAttempts
+		dataType: string
+		lineageTag: 75f0c285-fb36-4549-9cfe-5ae9fb1f183a
+		summarizeBy: none
+		sourceColumn: refreshAttempts
+
+		annotation SummarizationSetBy = Automatic
+
+	column dataset_id
+		dataType: string
+		lineageTag: 5ce20ae7-83e8-4b83-80fd-194c6f79f385
+		summarizeBy: none
+		sourceColumn: dataset_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column serviceExceptionJson
+		dataType: string
+		lineageTag: e902458f-a162-4fa9-991a-5183f9b85456
+		summarizeBy: none
+		sourceColumn: serviceExceptionJson
+
+		annotation SummarizationSetBy = Automatic
+
+	column refreshDurationMoreThan1Hr
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 921f137c-d16e-43cf-ab97-475bf158d484
+		summarizeBy: none
+		sourceColumn: refreshDurationMoreThan1Hr
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PowerBIRefreshesHistory = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("MAQ23611\SQLEXPRESS", "AdminGovernanceTool"),
+				  #"Navigation 1" = Source{[Schema = "dbo", Item = "PowerBIRefreshesHistory"]}[Data],
+				  #"Changed column type" = Table.TransformColumnTypes(#"Navigation 1", {{"startTime", type datetime}, {"endTime", type datetime}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed column type",{{"endTime", "refreshEndTime"}, {"startTime", "refreshStartTime"}}),
+				  #"Added custom" = Table.TransformColumnTypes(Table.AddColumn(#"Renamed Columns", "refreshDurationMoreThan1Hr", each Duration.TotalSeconds([refreshEndTime]-[refreshStartTime])>3600), {{"refreshDurationMoreThan1Hr", type logical}})
+				in
+				  #"Added custom"
+
+	annotation PBI_ResultType = Table
+

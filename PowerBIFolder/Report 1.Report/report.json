@@ -1,0 +1,69 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.58\",\"type\":2}},\"activeSectionIndex\":0,\"modelExtensions\":[{\"name\":\"extension\",\"entities\":[{\"name\":\"Product\",\"extends\":\"Product\",\"measures\":[{\"name\":\"SelectedProduct\",\"dataType\":3,\"expression\":\"\\nSELECTEDVALUE(Product[Product], \\\"No selection\\\")\\n\",\"errorMessage\":null,\"hidden\":false,\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"General\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}},{\"name\":\"ProductFilterURL\",\"dataType\":1,\"expression\":\"\\n\\\"https://app.powerbi.com/groups/3bf5b678-13cd-4ffe-bdbb-28941f9d30d6/reports/8acc676a-ebcc-4aaf-b845-aade5a6b0122/a0929c0b2ea0993a995d?filter=Product/Product eq '\\\" & \\n[SelectedProduct] & \\\"'\\\"\",\"errorMessage\":null,\"hidden\":false,\"references\":{\"unrecognizedReferences\":false,\"measures\":[{\"schema\":\"extension\",\"entity\":\"Product\",\"name\":\"SelectedProduct\"}]},\"formulaOverride\":null,\"formatInformation\":{\"formatString\":\"G\",\"format\":\"Text\",\"thousandSeparator\":false,\"currencyFormat\":null,\"dateTimeCustomFormat\":null}}]}]}],\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"filterPaneHiddenInEditMode\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "8c7300c0b564dbd9020d",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1525b555ce282fd67a29\",\"layouts\":[{\"id\":0,\"position\":{\"x\":725.6748713926504,\"y\":0,\"z\":3,\"width\":553.7050450990796,\"height\":188.97783109183604,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.SelectedProduct\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Schema\":\"extension\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"SelectedProduct\"},\"Name\":\"Product.SelectedProduct\",\"NativeReferenceName\":\"SelectedProduct\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"SelectedProduct\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 188.98,
+          "width": 553.71,
+          "x": 725.67,
+          "y": 0.00,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"2189d9445948f73748d1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1,\"width\":321.2623128561213,\"height\":141.73337331887703,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Product\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Product\"},\"Name\":\"Product.Product\",\"NativeReferenceName\":\"Product\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Product\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'3CAX-B Helicopter'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 141.73,
+          "width": 321.26,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"219a2d8dbea13192a695\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":238.1120671757134,\"z\":0,\"width\":640.6348474013242,\"height\":481.8934692841819,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Product.Category\"},{\"queryRef\":\"Product.Demographic\"},{\"queryRef\":\"Product.Item Group\"},{\"queryRef\":\"Product.Product\"},{\"queryRef\":\"Product.RetailPrice\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"Product\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Category\"},\"Name\":\"Product.Category\",\"NativeReferenceName\":\"Category\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Demographic\"},\"Name\":\"Product.Demographic\",\"NativeReferenceName\":\"Demographic\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Item Group\"},\"Name\":\"Product.Item Group\",\"NativeReferenceName\":\"Item Group\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"Product\"},\"Name\":\"Product.Product\",\"NativeReferenceName\":\"Product\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"RetailPrice\"},\"Name\":\"Product.RetailPrice\",\"NativeReferenceName\":\"RetailPrice\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 481.89,
+          "width": 640.63,
+          "x": 0.00,
+          "y": 238.11,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"d01e20aed7d3a50b8673\",\"layouts\":[{\"id\":0,\"position\":{\"x\":349.6089875198967,\"y\":0,\"z\":2,\"width\":222.99384068836653,\"height\":71.8115758148977}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'WebUrl'\"}}},\"webUrl\":{\"expr\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Schema\":\"extension\",\"Entity\":\"Product\"}},\"Property\":\"ProductFilterURL\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 71.81,
+          "width": 222.99,
+          "x": 349.61,
+          "y": 0.00,
+          "z": 2.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

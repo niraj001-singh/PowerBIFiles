@@ -1,0 +1,156 @@
+table PowerBIDatasets
+	lineageTag: ab0287d6-783c-4fad-8782-e1cb4dd91db8
+
+	column id
+		dataType: string
+		lineageTag: 9c75b533-c27b-412f-aa2c-b8fe91471597
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column datasetName
+		dataType: string
+		lineageTag: 9b67c46a-a42d-4fea-b3c7-afa891a541ae
+		summarizeBy: none
+		sourceColumn: datasetName
+
+		annotation SummarizationSetBy = Automatic
+
+	column webUrl
+		dataType: string
+		lineageTag: e447b470-da9e-40ef-b304-d51718de83fe
+		summarizeBy: none
+		sourceColumn: webUrl
+
+		annotation SummarizationSetBy = Automatic
+
+	column addRowsAPIEnabled
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1163780e-473e-40cc-bf1a-82d0e7da2a57
+		summarizeBy: none
+		sourceColumn: addRowsAPIEnabled
+
+		annotation SummarizationSetBy = Automatic
+
+	column configuredBy
+		dataType: string
+		lineageTag: 4cc293b3-fd8a-45d7-8b7e-a2b72f7c85a7
+		summarizeBy: none
+		sourceColumn: configuredBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column isRefreshable
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: fa6ea257-1557-4809-872a-f59c0154ef23
+		summarizeBy: none
+		sourceColumn: isRefreshable
+
+		annotation SummarizationSetBy = Automatic
+
+	column isEffectiveIdentityRequired
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: a1b6ee76-1603-4f61-b1a9-7824dbd8d77e
+		summarizeBy: none
+		sourceColumn: isEffectiveIdentityRequired
+
+		annotation SummarizationSetBy = Automatic
+
+	column isEffectiveIdentityRolesRequired
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b08f3287-b824-447f-87af-68d7e5059d19
+		summarizeBy: none
+		sourceColumn: isEffectiveIdentityRolesRequired
+
+		annotation SummarizationSetBy = Automatic
+
+	column isOnPremGatewayRequired
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1dbe5788-eefd-4b6e-b10d-0f9193fec019
+		summarizeBy: none
+		sourceColumn: isOnPremGatewayRequired
+
+		annotation SummarizationSetBy = Automatic
+
+	column targetStorageMode
+		dataType: string
+		lineageTag: 856b474f-92ac-4f47-8891-cdcbb3293d32
+		summarizeBy: none
+		sourceColumn: targetStorageMode
+
+		annotation SummarizationSetBy = Automatic
+
+	column createdDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a5e55c44-23c9-4aac-86be-3379dd9140bf
+		summarizeBy: none
+		sourceColumn: createdDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column createReportEmbedURL
+		dataType: string
+		lineageTag: 30fda318-c0d9-4ab9-baab-8a68088727b7
+		summarizeBy: none
+		sourceColumn: createReportEmbedURL
+
+		annotation SummarizationSetBy = Automatic
+
+	column qnaEmbedURL
+		dataType: string
+		lineageTag: d759d606-cda8-4dac-8f5b-32f525014171
+		summarizeBy: none
+		sourceColumn: qnaEmbedURL
+
+		annotation SummarizationSetBy = Automatic
+
+	column upstreamDatasets
+		dataType: string
+		lineageTag: 1b4d9ffb-4b05-4981-a910-0508a547c8a7
+		summarizeBy: none
+		sourceColumn: upstreamDatasets
+
+		annotation SummarizationSetBy = Automatic
+
+	column users
+		dataType: string
+		lineageTag: de3f61f0-f799-42b1-9a89-349b81433669
+		summarizeBy: none
+		sourceColumn: users
+
+		annotation SummarizationSetBy = Automatic
+
+	column queryScaleOutSettings
+		dataType: string
+		lineageTag: 2debc139-0bab-4973-a43a-48c5ccc9fae6
+		summarizeBy: none
+		sourceColumn: queryScaleOutSettings
+
+		annotation SummarizationSetBy = Automatic
+
+	column hasParentInCurrentWorkspace = CALCULATE(If(ISBLANK(COUNT(PowerBIReports[datasetId])),"No","Yes"))
+		lineageTag: e7534a1a-3f98-4402-9efa-9dcbb80bd622
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PowerBIDatasets = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("MAQ23611\SQLEXPRESS", "AdminGovernanceTool"),
+				  #"Navigation 1" = Source{[Schema = "dbo", Item = "PowerBIDatasets"]}[Data],
+				  #"Changed column type" = Table.TransformColumnTypes(#"Navigation 1", {{"createdDate", type datetime}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed column type",{{"name", "datasetName"}})
+				in
+				  #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+

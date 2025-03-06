@@ -1,0 +1,6772 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "3.5.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "power_BI_dataset": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "power BI dataset": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PowerBIDatasets": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dataset": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "BI dataset": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "power_BI_dataset.dataset_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "datasetName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataset name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "datasetName": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dataset": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dataset nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dataset title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dataset label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dataset tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "power_BI_dataset.web_url": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "webUrl"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "web url": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "webUrl": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "url": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "web website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "web site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "web web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        },
+			        {
+			          "web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.add_rows_API_enabled": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "addRowsAPIEnabled"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "add rows API enabled": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "add row API enabled": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "addRowsAPIEnabled": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "add ruckus api enabled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "add commotion api enabled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "add rumpus api enabled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "add disturbance api enabled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "add noise api enabled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "add racket api enabled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "add din api enabled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "add disorder api enabled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "add clamor api enabled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "add line api enabled": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.configured_by": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "configuredBy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "configured by": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "configuredBy": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.is_refreshable": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "isRefreshable"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is refreshable": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "isRefreshable": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.is_effective_identity_required": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "isEffectiveIdentityRequired"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is effective identity required": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "isEffectiveIdentityRequired": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "is effective individuality required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "is effective uniqueness required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "is effective distinctiveness required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "is effective personality required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "is effective self required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "is effective character required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.is_effective_identity_role_required": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "isEffectiveIdentityRolesRequired"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is effective identity role required": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "isEffectiveIdentityRolesRequired": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "is effective identity person required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "is effective identity hero required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "is effective identity heroine required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "is effective identity protagonist required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "is effective identity part required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "is effective identity character required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "is effective identity responsibility required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "is effective identity position required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "is effective identity function required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        },
+			        {
+			          "is effective identity job required": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.479
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.is_on_prem_gateway_required": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "isOnPremGatewayRequired"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is on prem gateway required": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "isOnPremGatewayRequired": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.target_storage_mode": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "targetStorageMode"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "target storage mode": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "targetStorageMode": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mode": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "storage mode": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "focus storage mode": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "goal storage mode": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "objective storage mode": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "target storage manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "target storage method": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "target storage genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "storage manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "storage method": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "storage genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "target storage style": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.created_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "createdDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "created date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "createdDate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "created moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "created period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "power_BI_dataset.create_report_embed_URL": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "createReportEmbedURL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "create report embed URL": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "createReportEmbedURL": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "create information embed url": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "create commentary embed url": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "create description embed url": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "create presentation embed url": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "create statement embed url": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "create report embed website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "create forecast embed url": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "create account embed url": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "create article embed url": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "create narrative embed url": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.qna_embed_URL": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "qnaEmbedURL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qna embed URL": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qnaEmbedURL": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "qna embed website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "qna embed site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "qna embed web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.484
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.upstream_dataset": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "upstreamDatasets"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "upstream dataset": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "upstreamDatasets": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dataset": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.user": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "users"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "user": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "operator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "employer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "manipulator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "handler": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "manager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "punter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.query_scale_out_settings": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "queryScaleOutSettings"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "query scale out settings": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "query scale out setting": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "queryScaleOutSettings": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "settings": {
+			            "Type": "Noun",
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "setting": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "out settings": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "out setting": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "scale out settings": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "scale out setting": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "scale": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "query scale": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "query ruler out setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "query weighbridge out setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "ruler out setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "weighbridge out setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "out location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "out surroundings": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "out scenery": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "query ruler": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "out situation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "out locale": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_dataset.has_parent_in_current_workspace": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIDatasets",
+			          "ConceptualProperty": "hasParentInCurrentWorkspace"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "has parent in current workspace": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hasParentInCurrentWorkspace": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "has parent in latest workspace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "has parent in contemporary workspace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "has parent in present workspace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "has parent in present day workspace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.629
+			          }
+			        },
+			        {
+			          "has parent in up to date workspace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.576
+			          }
+			        },
+			        {
+			          "has parent in current workstation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "has parent in current cubicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "has parent in current workplace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "has parent in current booth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "has parent in current desk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesHistory"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "power BI refreshes history": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "power BI refresh history": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "PowerBIRefreshesHistory": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "history": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "refreshes history": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "refresh history": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "BI refreshes history": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "BI refresh history": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        },
+			        {
+			          "power bi refresh antiquity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "bi refresh antiquity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "refresh antiquity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "power bi refresh past": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "bi refresh past": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "antiquity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "power bi refresh narration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "power bi refresh saga": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "power bi refresh description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "power bi refresh memoire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history.request_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesHistory",
+			          "ConceptualProperty": "requestId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "request id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "requestId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "request": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "request identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "request identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "request identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "request credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "entreaty": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "invitation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "appeal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "application": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "wish": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesHistory",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "power_BI_refreshes_history.refresh_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesHistory",
+			          "ConceptualProperty": "refreshType"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "refresh type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "refreshType": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "refresh category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "refresh genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "refresh manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "refresh variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "refresh brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "refresh class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history.refresh_start_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesHistory",
+			          "ConceptualProperty": "refreshStartTime"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "refresh start time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "refreshStartTime": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "start time": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "refresh start duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "refresh start interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "refresh start moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "start duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "start interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "start moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "refresh start period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "refresh start timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "start period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "start timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "power_BI_refreshes_history.refresh_end_time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesHistory",
+			          "ConceptualProperty": "refreshEndTime"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "refresh end time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "refreshEndTime": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "end time": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "refresh end duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "refresh end interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "refresh end moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "end duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "end interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "end moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "refresh end period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "refresh end timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "end period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "end timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "power_BI_refreshes_history.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesHistory",
+			          "ConceptualProperty": "status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history.refresh_attempt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesHistory",
+			          "ConceptualProperty": "refreshAttempts"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "refresh attempt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "refreshAttempts": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "attempt": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "refresh effort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "effort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "refresh try": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "refresh go": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "refresh shot": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "refresh challenge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "refresh endeavor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "refresh stab": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "refresh crack": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "refresh bid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history.dataset_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesHistory",
+			          "ConceptualProperty": "dataset_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dataset id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dataset_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dataset": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dataset identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dataset identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dataset identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dataset credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history.service_exception_json": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesHistory",
+			          "ConceptualProperty": "serviceExceptionJson"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "service exception json": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "serviceExceptionJson": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maintenance exception json": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "examination exception json": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "svc exception json": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "package exception json": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "repair exception json": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "benefit exception json": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "servicing exception json": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history.refresh_duration_more_than_1_hr": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesHistory",
+			          "ConceptualProperty": "refreshDurationMoreThan1Hr"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "refresh duration more than 1 hr": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "refreshDurationMoreThan1Hr": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesScheduled"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "power BI refresh scheduled": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PowerBIRefreshesScheduled": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled.odata_context": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesScheduled",
+			          "ConceptualProperty": "_odata_context"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "odata context": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_odata_context": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "odata situation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "odata framework": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "odata milieu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "odata environment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "odata setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "odata background": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "odata perspective": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "odata circumstance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesScheduled",
+			          "ConceptualProperty": "days"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled.time": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesScheduled",
+			          "ConceptualProperty": "times"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "time": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "interval": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "timetable": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled.enabled": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesScheduled",
+			          "ConceptualProperty": "enabled"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "enabled": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled.local_time_zone_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesScheduled",
+			          "ConceptualProperty": "localTimeZoneId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "local time zone id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "localTimeZoneId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "zone": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "time zone": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "local time zone": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "zone id": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "time zone id": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "local time zone identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "local time zone identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "local time zone identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "time zone identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "time zone identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "time zone identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "zone identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "zone identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "zone identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "local time zone credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled.notify_option": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesScheduled",
+			          "ConceptualProperty": "notifyOption"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "notify option": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "notifyOption": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "notify selection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "notify decision": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "notify possibility": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "notify opportunity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "notify preference": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "notify choice": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "notify route": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "notify alternative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled.dataset_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesScheduled",
+			          "ConceptualProperty": "dataset_id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataset id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dataset_id": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dataset": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dataset identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dataset identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dataset identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dataset credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled.refresh_count_per_day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIRefreshesScheduled",
+			          "ConceptualProperty": "refreshCountPerDay"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "refresh count per day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "refreshCountPerDay": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "refresh count": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "refresh amount per day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "refresh amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_report": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "power BI report": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PowerBIReports": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "report": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "BI report": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "power bi information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "power bi commentary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "power bi description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "power bi presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "power bi statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "bi information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bi commentary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bi description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bi presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "bi statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_report.id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports",
+			          "ConceptualProperty": "id"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Identifier"
+			    },
+			    "power_BI_report.report_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports",
+			          "ConceptualProperty": "reportType"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "report type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "reportType": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "report category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "report genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "report manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "report variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "report brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "report class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_report.report_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports",
+			          "ConceptualProperty": "reportName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "report name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "reportName": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "report": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "commentary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "presentation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "report nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "report title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "report label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "report tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "forecast": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "power_BI_report.web_url": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports",
+			          "ConceptualProperty": "webUrl"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "web url": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "webUrl": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "url": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "web website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "web site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "web web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        },
+			        {
+			          "web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.571
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_report.embed_url": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports",
+			          "ConceptualProperty": "embedUrl"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "embed url": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "embedUrl": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "embed website": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "embed site": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "embed web address": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.589
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_report.is_from_pbix": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports",
+			          "ConceptualProperty": "isFromPbix"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is from pbix": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "isFromPbix": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_report.is_owned_by_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports",
+			          "ConceptualProperty": "isOwnedByMe"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "is owned by me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "isOwnedByMe": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_report.dataset_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports",
+			          "ConceptualProperty": "datasetId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "dataset id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "datasetId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "dataset": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dataset identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dataset identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dataset identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dataset credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_report.dataset_workspace_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports",
+			          "ConceptualProperty": "datasetWorkspaceId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataset workspace id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "datasetWorkspaceId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "workspace": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dataset workspace": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "workspace id": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "dataset workspace identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "dataset workspace identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "dataset workspace identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "workspace identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "workspace identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "workspace identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "dataset workspace credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "workspace credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dataset workstation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dataset cubicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_report.user": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports",
+			          "ConceptualProperty": "users"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "user": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "operator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "worker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "employer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "manipulator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "handler": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "manager": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "customer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "punter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "power_BI_report.subscription": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "PowerBIReports",
+			          "ConceptualProperty": "subscriptions"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "subscription": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "donation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "contribution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "meaure_table": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Meaure Table"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "meaure table": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "meaure tabletop": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "meaure bench": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "meaure board": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "meaure counter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "meaure stand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "meaure slab": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "meaure desk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "meaure stall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "meaure table top": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "meaure spreadsheet": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "meaure_table.reports_with_more_than_8_refreshes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Meaure Table",
+			          "ConceptualProperty": "Reports with more than 8 Refreshes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "reports with more than 8 refreshes": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "meaure_table.count_datasets_with_no_parent_in_current_workspace": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Meaure Table",
+			          "ConceptualProperty": "Count of Orphan Datasets"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "count of orphan datasets": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "number of orphan dataset": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "amount of orphan dataset": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "meaure_table.count_of_datasets_taking_more_than_one_hours": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Meaure Table",
+			          "ConceptualProperty": "Count of datasets taking more than one hours"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "count of datasets taking more than one hours": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "power_BI_report_has_dataset_workspace_id": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        },
+			        "power_BI_report.dataset_workspace_id": {
+			          "Target": {
+			            "Entity": "power_BI_report.dataset_workspace_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report.dataset_workspace_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_dataset_workspace_ids"
+			        }
+			      ]
+			    },
+			    "power_BI_report_has_is_owned_by_me": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        },
+			        "power_BI_report.is_owned_by_me": {
+			          "Target": {
+			            "Entity": "power_BI_report.is_owned_by_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report.is_owned_by_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_is_owned_by_me"
+			        }
+			      ]
+			    },
+			    "power_BI_report_has_is_from_pbix": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        },
+			        "power_BI_report.is_from_pbix": {
+			          "Target": {
+			            "Entity": "power_BI_report.is_from_pbix"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report.is_from_pbix"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_is_from_pbix"
+			        }
+			      ]
+			    },
+			    "power_BI_report_has_embed_url": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        },
+			        "power_BI_report.embed_url": {
+			          "Target": {
+			            "Entity": "power_BI_report.embed_url"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report.embed_url"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_embed_url"
+			        }
+			      ]
+			    },
+			    "power_BI_report_has_web_url": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        },
+			        "power_BI_report.web_url": {
+			          "Target": {
+			            "Entity": "power_BI_report.web_url"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report.web_url"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_web_urls"
+			        }
+			      ]
+			    },
+			    "power_BI_report_has_report_name": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        },
+			        "power_BI_report.report_name": {
+			          "Target": {
+			            "Entity": "power_BI_report.report_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report.report_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_report_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Name": {
+			              "Role": "power_BI_report.report_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_names_are_names_IDs_of_power_BI_reports"
+			        }
+			      ]
+			    },
+			    "power_BI_report_has_report_type": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        },
+			        "power_BI_report.report_type": {
+			          "Target": {
+			            "Entity": "power_BI_report.report_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report.report_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_report_types"
+			        }
+			      ]
+			    },
+			    "power_BI_report_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        },
+			        "power_BI_report.id": {
+			          "Target": {
+			            "Entity": "power_BI_report.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Name": {
+			              "Role": "power_BI_report.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_power_BI_reports"
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled_has_refresh_count_per_day": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesScheduled"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refresh_scheduled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled"
+			          }
+			        },
+			        "power_BI_refresh_scheduled.refresh_count_per_day": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled.refresh_count_per_day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refresh_scheduled"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refresh_scheduled.refresh_count_per_day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refresh_scheduled_have_refresh_count_per_day"
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled_has_dataset_id": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesScheduled"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refresh_scheduled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled"
+			          }
+			        },
+			        "power_BI_refresh_scheduled.dataset_id": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled.dataset_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refresh_scheduled"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refresh_scheduled.dataset_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refresh_scheduled_have_dataset_ids"
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled_has_notify_option": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesScheduled"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refresh_scheduled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled"
+			          }
+			        },
+			        "power_BI_refresh_scheduled.notify_option": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled.notify_option"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refresh_scheduled"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refresh_scheduled.notify_option"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refresh_scheduled_have_notify_option"
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled_has_local_time_zone_id": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesScheduled"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refresh_scheduled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled"
+			          }
+			        },
+			        "power_BI_refresh_scheduled.local_time_zone_id": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled.local_time_zone_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refresh_scheduled"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refresh_scheduled.local_time_zone_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refresh_scheduled_have_local_time_zone_ids"
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled_has_enabled": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesScheduled"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refresh_scheduled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled"
+			          }
+			        },
+			        "power_BI_refresh_scheduled.enabled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled.enabled"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refresh_scheduled"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refresh_scheduled.enabled"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refresh_scheduled_have_enabled"
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled_has_time": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesScheduled"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refresh_scheduled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled"
+			          }
+			        },
+			        "power_BI_refresh_scheduled.time": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled.time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refresh_scheduled"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refresh_scheduled.time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refresh_scheduled_have_times"
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled_has_day": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesScheduled"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refresh_scheduled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled"
+			          }
+			        },
+			        "power_BI_refresh_scheduled.day": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refresh_scheduled"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refresh_scheduled.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refresh_scheduled_have_days"
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled_has_odata_context": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesScheduled"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refresh_scheduled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled"
+			          }
+			        },
+			        "power_BI_refresh_scheduled.odata_context": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled.odata_context"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refresh_scheduled"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refresh_scheduled.odata_context"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refresh_scheduled_have_odata_contexts"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_has_refresh_duration_more_than_1_hr": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_refreshes_history.refresh_duration_more_than_1_hr": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history.refresh_duration_more_than_1_hr"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refreshes_history.refresh_duration_more_than_1_hr"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refreshes_histories_have_refresh_duration_more_than_1_hr"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_has_service_exception_json": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_refreshes_history.service_exception_json": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history.service_exception_json"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refreshes_history.service_exception_json"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refreshes_histories_have_service_exception_jsons"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_has_refresh_attempt": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_refreshes_history.refresh_attempt": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history.refresh_attempt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refreshes_history.refresh_attempt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refreshes_histories_have_refresh_attempts"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_has_status": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_refreshes_history.status": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history.status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refreshes_history.status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refreshes_histories_have_statuses"
+			        },
+			        {
+			          "DynamicAdjective": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Adjective": {
+			              "Role": "power_BI_refreshes_history.status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "statuses_describe_power_BI_refreshes_histories"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_has_refresh_end_time": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_refreshes_history.refresh_end_time": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history.refresh_end_time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refreshes_history.refresh_end_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refreshes_histories_have_refresh_end_times"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_has_refresh_start_time": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_refreshes_history.refresh_start_time": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history.refresh_start_time"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refreshes_history.refresh_start_time"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refreshes_histories_have_refresh_start_times"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_has_refresh_type": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_refreshes_history.refresh_type": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history.refresh_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refreshes_history.refresh_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refreshes_histories_have_refresh_types"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_refreshes_history.id": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refreshes_history.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refreshes_histories_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Name": {
+			              "Role": "power_BI_refreshes_history.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_power_BI_refreshes_histories"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_has_request_id": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_refreshes_history.request_id": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history.request_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refreshes_history.request_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refreshes_histories_have_request_ids"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_has_parent_in_current_workspace": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.has_parent_in_current_workspace": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.has_parent_in_current_workspace"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.has_parent_in_current_workspace"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_has_parent_in_current_workspace"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_query_scale_out_settings": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.query_scale_out_settings": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.query_scale_out_settings"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.query_scale_out_settings"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_query_scale_out_settings"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Verbs": [
+			              {
+			                "scale": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "PrepositionalPhrases": [
+			              {
+			                "Prepositions": [
+			                  {
+			                    "out": {
+			                      "State": "Generated"
+			                    }
+			                  }
+			                ],
+			                "Object": {
+			                  "Role": "power_BI_dataset.query_scale_out_settings"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.95,
+			          "ID": "power_BI_datasets_scale_out_query_scale_out_settings"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Prepositions": [
+			              {
+			                "out": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "power_BI_dataset.query_scale_out_settings"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_are_out_query_scale_out_settings"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_user": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.user": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.user"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.user"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_users"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "power_BI_dataset.user"
+			            },
+			            "Verbs": [
+			              {
+			                "use": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "power_BI_dataset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "users_use_power_BI_datasets"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset.user"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "users_have_power_BI_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_upstream_dataset": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.upstream_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.upstream_dataset"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.upstream_dataset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_upstream_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_qna_embed_URL": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.qna_embed_URL": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.qna_embed_URL"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.qna_embed_URL"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_qna_embed_URL"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_create_report_embed_URL": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.create_report_embed_URL": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.create_report_embed_URL"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.create_report_embed_URL"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_create_report_embed_URL"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_created_date": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.created_date": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.created_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.created_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_created_dates"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_target_storage_mode": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.target_storage_mode": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.target_storage_mode"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.target_storage_mode"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_target_storage_modes"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_is_on_prem_gateway_required": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.is_on_prem_gateway_required": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.is_on_prem_gateway_required"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.is_on_prem_gateway_required"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_is_on_prem_gateway_required"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_is_effective_identity_role_required": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.is_effective_identity_role_required": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.is_effective_identity_role_required"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.is_effective_identity_role_required"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_is_effective_identity_role_required"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_is_effective_identity_required": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.is_effective_identity_required": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.is_effective_identity_required"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.is_effective_identity_required"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_is_effective_identity_required"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_is_refreshable": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.is_refreshable": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.is_refreshable"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.is_refreshable"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_is_refreshable"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_configured_by": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.configured_by": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.configured_by"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.configured_by"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_configured_by"
+			        },
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "power_BI_dataset.configured_by"
+			            },
+			            "Verbs": [
+			              {
+			                "configure": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "power_BI_dataset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.95,
+			          "ID": "configured_by_configure_power_BI_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_add_rows_API_enabled": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.add_rows_API_enabled": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.add_rows_API_enabled"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.add_rows_API_enabled"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_add_rows_API_enabled"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_web_url": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.web_url": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.web_url"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.web_url"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_web_urls"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_dataset_name": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.dataset_name": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.dataset_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.dataset_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_dataset_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Name": {
+			              "Role": "power_BI_dataset.dataset_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataset_names_are_names_IDs_of_power_BI_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.id": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Name": {
+			              "Role": "power_BI_dataset.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_power_BI_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_is_ended_on_refresh_end_time": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_refreshes_history.refresh_end_time": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history.refresh_end_time"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "power_BI_refreshes_history.refresh_end_time"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "end": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "power_BI_refreshes_history"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "power_BI_refreshes_histories_are_ended_on_refresh_end_times"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_is_started_on_refresh_start_time": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_refreshes_history.refresh_start_time": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history.refresh_start_time"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "power_BI_refreshes_history.refresh_start_time"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "start": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "power_BI_refreshes_history"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "power_BI_refreshes_histories_are_started_on_refresh_start_times"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_is_created_on_created_date": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.created_date": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.created_date"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "power_BI_dataset.created_date"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "create": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "power_BI_dataset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "power_BI_datasets_are_created_on_created_dates"
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled_is_enabled": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesScheduled"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refresh_scheduled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled"
+			          }
+			        },
+			        "power_BI_refresh_scheduled.enabled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled.enabled"
+			          }
+			        }
+			      },
+			      "Conditions": [
+			        {
+			          "Target": {
+			            "Role": "power_BI_refresh_scheduled.enabled"
+			          },
+			          "Operator": "Equals",
+			          "Value": {
+			            "Boolean": [
+			              true
+			            ]
+			          }
+			        }
+			      ],
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "power_BI_refresh_scheduled"
+			            },
+			            "Adjectives": [
+			              {
+			                "enabled": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "some_power_BI_refresh_scheduled_are_enabled_power_BI_refresh_scheduled"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_is_is_on_prem_gateway_required": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.is_on_prem_gateway_required": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.is_on_prem_gateway_required"
+			          }
+			        }
+			      },
+			      "Conditions": [
+			        {
+			          "Target": {
+			            "Role": "power_BI_dataset.is_on_prem_gateway_required"
+			          },
+			          "Operator": "Equals",
+			          "Value": {
+			            "Boolean": [
+			              true
+			            ]
+			          }
+			        }
+			      ],
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Adjectives": [
+			              {
+			                "is on prem gateway required": {
+			                  "State": "Generated"
+			                }
+			              },
+			              {
+			                "is-on-prem-gateway-required": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "some_power_BI_datasets_are_is_on_prem_gateway_required_power_BI_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_is_is_effective_identity_role_required": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.is_effective_identity_role_required": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.is_effective_identity_role_required"
+			          }
+			        }
+			      },
+			      "Conditions": [
+			        {
+			          "Target": {
+			            "Role": "power_BI_dataset.is_effective_identity_role_required"
+			          },
+			          "Operator": "Equals",
+			          "Value": {
+			            "Boolean": [
+			              true
+			            ]
+			          }
+			        }
+			      ],
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Adjectives": [
+			              {
+			                "is effective identity role required": {
+			                  "State": "Generated"
+			                }
+			              },
+			              {
+			                "is-effective-identity-role-required": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "some_power_BI_datasets_are_is_effective_identity_role_required_power_BI_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_is_is_effective_identity_required": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.is_effective_identity_required": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.is_effective_identity_required"
+			          }
+			        }
+			      },
+			      "Conditions": [
+			        {
+			          "Target": {
+			            "Role": "power_BI_dataset.is_effective_identity_required"
+			          },
+			          "Operator": "Equals",
+			          "Value": {
+			            "Boolean": [
+			              true
+			            ]
+			          }
+			        }
+			      ],
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Adjectives": [
+			              {
+			                "is effective identity required": {
+			                  "State": "Generated"
+			                }
+			              },
+			              {
+			                "is-effective-identity-required": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "some_power_BI_datasets_are_is_effective_identity_required_power_BI_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_is_refreshable": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_dataset.is_refreshable": {
+			          "Target": {
+			            "Entity": "power_BI_dataset.is_refreshable"
+			          }
+			        }
+			      },
+			      "Conditions": [
+			        {
+			          "Target": {
+			            "Role": "power_BI_dataset.is_refreshable"
+			          },
+			          "Operator": "Equals",
+			          "Value": {
+			            "Boolean": [
+			              true
+			            ]
+			          }
+			        }
+			      ],
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Adjectives": [
+			              {
+			                "refreshable": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ]
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "some_power_BI_datasets_are_refreshable_power_BI_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_report_user_use_power_BI_report": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report.user": {
+			          "Target": {
+			            "Entity": "power_BI_report.user"
+			          }
+			        },
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "power_BI_report.user"
+			            },
+			            "Verbs": [
+			              {
+			                "use": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "power_BI_report"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "users_use_power_BI_reports"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report.user"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "users_have_power_BI_reports"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report.user"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_users"
+			        }
+			      ]
+			    },
+			    "power_BI_report_has_subscription": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        },
+			        "power_BI_report.subscription": {
+			          "Target": {
+			            "Entity": "power_BI_report.subscription"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report.subscription"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_subscriptions"
+			        }
+			      ]
+			    },
+			    "meaure_table_has_reports_with_more_than_8_refreshes": {
+			      "Binding": {
+			        "ConceptualEntity": "Meaure Table"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "meaure_table": {
+			          "Target": {
+			            "Entity": "meaure_table"
+			          }
+			        },
+			        "meaure_table.reports_with_more_than_8_refreshes": {
+			          "Target": {
+			            "Entity": "meaure_table.reports_with_more_than_8_refreshes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "meaure_table"
+			            },
+			            "Object": {
+			              "Role": "meaure_table.reports_with_more_than_8_refreshes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "meaure_tables_have_reports_with_more_than_8_refreshes"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_meaure_table_count_datasets_with_no_parent_in_current_workspace": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "meaure_table.count_datasets_with_no_parent_in_current_workspace": {
+			          "Target": {
+			            "Entity": "meaure_table.count_datasets_with_no_parent_in_current_workspace"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "meaure_table.count_datasets_with_no_parent_in_current_workspace"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_count_of_orphan_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_report_has_meaure_table_count_datasets_with_no_parent_in_current_workspace": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        },
+			        "meaure_table.count_datasets_with_no_parent_in_current_workspace": {
+			          "Target": {
+			            "Entity": "meaure_table.count_datasets_with_no_parent_in_current_workspace"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "meaure_table.count_datasets_with_no_parent_in_current_workspace"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_count_of_orphan_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_has_meaure_table_count_of_datasets_taking_more_than_one_hours": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "meaure_table.count_of_datasets_taking_more_than_one_hours": {
+			          "Target": {
+			            "Entity": "meaure_table.count_of_datasets_taking_more_than_one_hours"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Object": {
+			              "Role": "meaure_table.count_of_datasets_taking_more_than_one_hours"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refreshes_histories_have_count_of_datasets_taking_more_than_one_hours"
+			        }
+			      ]
+			    },
+			    "power_BI_dataset_has_power_BI_refresh_scheduled": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIDatasets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        },
+			        "power_BI_refresh_scheduled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refresh_scheduled"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_power_BI_refresh_scheduled"
+			        }
+			      ]
+			    },
+			    "power_BI_refreshes_history_has_power_BI_dataset": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesHistory"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refreshes_history": {
+			          "Target": {
+			            "Entity": "power_BI_refreshes_history"
+			          }
+			        },
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refreshes_history"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refreshes_histories_have_power_BI_datasets"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_refreshes_history"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_power_BI_refreshes_histories"
+			        }
+			      ]
+			    },
+			    "power_BI_refresh_scheduled_has_power_BI_dataset": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIRefreshesScheduled"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_refresh_scheduled": {
+			          "Target": {
+			            "Entity": "power_BI_refresh_scheduled"
+			          }
+			        },
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_refresh_scheduled"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_refresh_scheduled_have_power_BI_datasets"
+			        }
+			      ]
+			    },
+			    "power_BI_report_has_power_BI_dataset": {
+			      "Binding": {
+			        "ConceptualEntity": "PowerBIReports"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "power_BI_report": {
+			          "Target": {
+			            "Entity": "power_BI_report"
+			          }
+			        },
+			        "power_BI_dataset": {
+			          "Target": {
+			            "Entity": "power_BI_dataset"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_report"
+			            },
+			            "Object": {
+			              "Role": "power_BI_dataset"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_reports_have_power_BI_datasets"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "power_BI_dataset"
+			            },
+			            "Object": {
+			              "Role": "power_BI_report"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "power_BI_datasets_have_power_BI_reports"
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

@@ -1,0 +1,32 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.135.7627.0 (24.08)
+
+annotation PBI_QueryOrder = ["Product","Region","Sales","State","DataFilePath","Table1","Table2"]
+
+ref table Product
+ref table Region
+ref table Sales
+ref table State
+ref table DateTableTemplate_cc28d0db-25bf-48c8-84ea-82a6ee8e527e
+ref table Date
+ref table LocalDateTable_caee39a0-dab8-4152-b3ec-8dac9afd30b6
+ref table Table1
+ref table LocalDateTable_09315162-acf2-41e6-8965-7dad2bae371a
+ref table Table2
+ref table LocalDateTable_2880aa8b-cf3c-41e9-8a13-7262bdc060e7
+
+ref role Alaska
+ref role Alabama
+ref role Arizona
+
+ref cultureInfo en-US
+

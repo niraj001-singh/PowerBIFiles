@@ -1,0 +1,11 @@
+expression 'DirectQuery to AS - Usage Metrics Report' =
+		let
+		    Source = AnalysisServices.Database("powerbi://api.powerbi.com/v1.0/myorg/CustomerA", "Usage Metrics Report"),
+		    Cubes = Table.Combine(Source[Data]),
+		    Cube = Cubes{[Id="Model", Kind="Cube"]}[Data]
+		in
+		    Cube
+	lineageTag: 62bc6e64-8ea2-4425-8b9e-520d56e2845f
+
+	annotation PBI_IncludeFutureArtifacts = True
+

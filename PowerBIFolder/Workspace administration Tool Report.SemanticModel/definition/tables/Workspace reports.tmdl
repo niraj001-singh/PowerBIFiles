@@ -1,0 +1,72 @@
+table 'Workspace reports'
+	lineageTag: 7cd9b87d-6636-4c10-94c1-360592f08b62
+	sourceLineageTag: bb3f9ae3-4a39-4d36-80c4-815ee18c146a
+
+	measure IsSelectedReport = EXTERNALMEASURE("IsSelectedReport", INTEGER, "DirectQuery to AS - Usage Metrics Report")
+		formatString: 0
+		lineageTag: 31d11a74-fc23-48a1-b4b8-05aadc6e6715
+		sourceLineageTag: c1d018d1-26b5-42af-815c-c72d45ebf455
+		dataCategory: Uncategorized
+
+	column ReportGuid
+		dataType: string
+		isNullable: false
+		lineageTag: 6e41a104-87f1-4c73-9371-1be420c38f0f
+		sourceLineageTag: 7dc770e3-25e2-4e48-8961-b964390cf0fd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReportGuid
+
+		annotation SummarizationSetBy = User
+
+	column trend
+		dataType: double
+		formatString: 0%;-0%;0%
+		lineageTag: 0e7db8a4-d6f1-4f3c-8f77-58ce796f2c60
+		sourceLineageTag: 64e70630-3689-4d9f-8fe3-26d4fdc20afa
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: trend
+
+		annotation SummarizationSetBy = User
+
+	column 'Days with usage'
+		dataType: int64
+		formatString: 0
+		lineageTag: 37e3ff02-e4c4-4e53-9b1f-78b7af683f91
+		sourceLineageTag: 3f021dae-8b9c-42aa-83f3-9cd57e6a3b2a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Days with usage
+
+		annotation SummarizationSetBy = User
+
+	column ReportName
+		dataType: string
+		lineageTag: dbda355d-7434-4e28-93f7-7ea1b58d7546
+		sourceLineageTag: 176daf7d-a39e-4990-a3b0-17771cebdb39
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReportName
+
+		annotation SummarizationSetBy = User
+
+	column IsUsageMetricsReportWS
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9c83d359-fa77-4637-9851-0f12475e142a
+		sourceLineageTag: 3877fe44-3d9d-4b3b-897f-397fcaccbfdd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: IsUsageMetricsReportWS
+
+		annotation SummarizationSetBy = User
+
+	partition 'Workspace reports' = entity
+		mode: directQuery
+		source
+			entityName: Workspace reports
+			expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	annotation PBI_ResultType = Exception
+

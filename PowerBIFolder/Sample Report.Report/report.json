@@ -1,0 +1,117 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.58\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true,\"filterPaneHiddenInEditMode\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "7692cca106d2838dce06",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"995154b20b07cdc0c72d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":194.72727272727272,\"y\":142.36363636363635,\"z\":0,\"width\":279.8181818181818,\"height\":279.8181818181818,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(financials. Sales)\"},{\"queryRef\":\"Sum(financials.COGS)\"},{\"queryRef\":\"financials.Country\"},{\"queryRef\":\"financials.Discount Band\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\" Sales\"}},\"Function\":0},\"Name\":\"Sum(financials. Sales)\",\"NativeReferenceName\":\"Sum of  Sales\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"COGS\"}},\"Function\":0},\"Name\":\"Sum(financials.COGS)\",\"NativeReferenceName\":\"Sum of COGS\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Country\"},\"Name\":\"financials.Country\",\"NativeReferenceName\":\"Country\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discount Band\"},\"Name\":\"financials.Discount Band\",\"NativeReferenceName\":\"Discount Band\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 279.82,
+          "width": 279.82,
+          "x": 194.73,
+          "y": 142.36,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "838908a81fc0f0b1daa6",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"244a418070ba03ead1e0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":845,\"y\":48.333333333333336,\"z\":6000,\"width\":435,\"height\":131.66666666666669,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A\",\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 131.67,
+          "width": 435.00,
+          "x": 845.00,
+          "y": 48.33,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"47ffc807c3a3b3c8de1d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":992.3682616596002,\"y\":0,\"z\":3000,\"width\":286.92386695810177,\"height\":97.07950385800437,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"financials.Month Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Month Name\"},\"Name\":\"financials.Month Name\",\"NativeReferenceName\":\"Month\"}]},\"columnProperties\":{\"financials.Month Name\":{\"displayName\":\"Month\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 97.08,
+          "width": 286.92,
+          "x": 992.37,
+          "y": 0.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"642ba57b58ede163858d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":423.33333333333337,\"y\":0,\"z\":2000,\"width\":286.6666666666667,\"height\":96.66666666666667,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"financials.Segment\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Segment\"},\"Name\":\"financials.Segment\",\"NativeReferenceName\":\"Segment\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 96.67,
+          "width": 286.67,
+          "x": 423.33,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"88a092ea5729dc358487\",\"layouts\":[{\"id\":0,\"position\":{\"x\":516.6666666666667,\"y\":118.33333333333334,\"z\":5000,\"width\":100,\"height\":40,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'WebUrl'\"}}},\"webUrl\":{\"expr\":{\"Literal\":{\"Value\":\"'https://testmaq.sharepoint.com/:x:/r/sites/SagarsTeam/_layouts/15/Doc.aspx?sourcedoc=%7B81DA871E-31C8-4651-9716-E8D60280090C%7D&file=ExportToCsv.csv&action=default&mobileredirect=true%3Fdownload%3D1?download=1'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 516.67,
+          "y": 118.33,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"bef063df5568a0090873\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":97.14285714285715,\"z\":4000,\"width\":197.14285714285717,\"height\":82.85714285714286,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"FlowVisual_C29F1DCC_81F5_4973_94AD_0517D44CC06A\",\"projections\":{\"table\":[{\"queryRef\":\"financials.Product\"},{\"queryRef\":\"financials.Segment\"},{\"queryRef\":\"Sum(financials. Sales)\"},{\"queryRef\":\"Sum(financials.Profit)\"},{\"queryRef\":\"financials.Discount Band\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Product\"},\"Name\":\"financials.Product\",\"NativeReferenceName\":\"Product\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Segment\"},\"Name\":\"financials.Segment\",\"NativeReferenceName\":\"Segment\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\" Sales\"}},\"Function\":0},\"Name\":\"Sum(financials. Sales)\",\"NativeReferenceName\":\"Sales\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Profit\"}},\"Function\":0},\"Name\":\"Sum(financials.Profit)\",\"NativeReferenceName\":\"Profit\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discount Band\"},\"Name\":\"financials.Discount Band\",\"NativeReferenceName\":\"Discount Band\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Product\"}}}]},\"columnProperties\":{\"Sum(financials. Sales)\":{\"displayName\":\"Sales\"},\"Sum(financials.Profit)\":{\"displayName\":\"Profit\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"flowInfo\":[{\"properties\":{\"FlowId\":{\"expr\":{\"Literal\":{\"Value\":\"'/providers/Microsoft.ProcessSimple/environments/Default-e4d98dd2-9199-42e5-ba8b-da3e763ede2e/flows/cb0813c9-ec17-4e5b-badf-c2d272e95619'\"}}},\"ManagementUri\":{\"expr\":{\"Literal\":{\"Value\":\"'https://us.api.flow.microsoft.com/providers/Microsoft.ProcessSimple'\"}}},\"EnvironmentId\":{\"expr\":{\"Literal\":{\"Value\":\"'Default-e4d98dd2-9199-42e5-ba8b-da3e763ede2e'\"}}},\"EnvironmentLocation\":{\"expr\":{\"Literal\":{\"Value\":\"'unitedstates'\"}}},\"EnvironmentRegion\":{\"expr\":{\"Literal\":{\"Value\":\"'westus'\"}}}}}],\"buttonText\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Export to CSV'\"}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 82.86,
+          "width": 197.14,
+          "x": 0.00,
+          "y": 97.14,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"e1c4ee14095bc7ef0cef\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":286.92386695810177,\"height\":97.07950385800437,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"financials.Product\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Product\"},\"Name\":\"financials.Product\",\"NativeReferenceName\":\"Product\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 97.08,
+          "width": 286.92,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"f1404cf71fd45770151b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":220,\"z\":0,\"width\":1280,\"height\":500.00000000000006,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"financials.Product\",\"active\":true},{\"queryRef\":\"financials.Segment\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(financials. Sales)\"},{\"queryRef\":\"Sum(financials.Profit)\"}],\"Columns\":[{\"queryRef\":\"financials.Discount Band\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Product\"},\"Name\":\"financials.Product\",\"NativeReferenceName\":\"Product\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Segment\"},\"Name\":\"financials.Segment\",\"NativeReferenceName\":\"Segment\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discount Band\"},\"Name\":\"financials.Discount Band\",\"NativeReferenceName\":\"Discount Band\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\" Sales\"}},\"Function\":0},\"Name\":\"Sum(financials. Sales)\",\"NativeReferenceName\":\"Sales\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Profit\"}},\"Function\":0},\"Name\":\"Sum(financials.Profit)\",\"NativeReferenceName\":\"Profit\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Product\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"financials.Product\"],\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"financials\"}},\"Property\":\"Product\"}}],\"isPinned\":true},{\"queryRefs\":[\"financials.Segment\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"Sum(financials. Sales)\":{\"displayName\":\"Sales\"},\"Sum(financials.Profit)\":{\"displayName\":\"Profit\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"171.4296643593732D\"}}}},\"selector\":{\"metadata\":\"financials.Product\"}}],\"general\":[{\"properties\":{\"layout\":{\"expr\":{\"Literal\":{\"Value\":\"'Tabular'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 500.00,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 220.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

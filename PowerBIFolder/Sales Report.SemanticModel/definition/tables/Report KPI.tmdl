@@ -1,0 +1,21 @@
+table 'Report KPI'
+	lineageTag: 28ee30d4-f25f-420d-9b18-1fb75bc73dcb
+
+	measure Sales = SUM(Orders[Profit])
+		formatString: "₹"\ #,0.###############;#,0.###############\ -"₹";"₹"\ #,0.###############
+		lineageTag: a27518c7-7258-4115-873e-4b138ed8b61c
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-IN"}
+
+	partition 'Report KPI' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45W8kjNTcwrUYqNBQA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

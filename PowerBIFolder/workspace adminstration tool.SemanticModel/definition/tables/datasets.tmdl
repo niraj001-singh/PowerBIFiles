@@ -1,0 +1,174 @@
+table datasets
+	lineageTag: b47dbe2c-b8d4-4c71-95bf-fd57aee50e6a
+
+	column '@odata.context'
+		dataType: string
+		lineageTag: 6c5a9108-69d5-49c0-98da-df18c24e0b17
+		summarizeBy: none
+		sourceColumn: @odata.context
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.id'
+		dataType: string
+		lineageTag: c42b5b78-820d-47f7-9db5-1905a091e80a
+		summarizeBy: none
+		sourceColumn: value.id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.name'
+		dataType: string
+		lineageTag: 2fa7e45e-7cb5-41ec-8998-0a13a1090779
+		summarizeBy: none
+		sourceColumn: value.name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.webUrl'
+		dataType: string
+		lineageTag: a6c0696e-2861-4647-8c9e-737d1b02abc7
+		summarizeBy: none
+		sourceColumn: value.webUrl
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.addRowsAPIEnabled'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 9a6a8535-9c81-46ef-bd75-e1b90337a69f
+		summarizeBy: none
+		sourceColumn: value.addRowsAPIEnabled
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.configuredBy'
+		dataType: string
+		lineageTag: ec0899dc-e41c-417f-811e-3b9fdfa33efd
+		summarizeBy: none
+		sourceColumn: value.configuredBy
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.isRefreshable'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 65fa50de-07cb-43a9-a17c-33d128c1e865
+		summarizeBy: none
+		sourceColumn: value.isRefreshable
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.isEffectiveIdentityRequired'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d7e2149b-2465-46c5-8a68-b0746ae664af
+		summarizeBy: none
+		sourceColumn: value.isEffectiveIdentityRequired
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.isEffectiveIdentityRolesRequired'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 739cd221-1553-4870-9c78-09106fc42470
+		summarizeBy: none
+		sourceColumn: value.isEffectiveIdentityRolesRequired
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.isOnPremGatewayRequired'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f7b3ab66-6dfb-4e32-a83a-e6f70651a63e
+		summarizeBy: none
+		sourceColumn: value.isOnPremGatewayRequired
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.targetStorageMode'
+		dataType: string
+		lineageTag: 5b8cc297-eade-44ef-9c91-aa1fca273551
+		summarizeBy: none
+		sourceColumn: value.targetStorageMode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.createdDate'
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d7b9f56f-6557-4b11-9f4d-b3657feb8bc4
+		summarizeBy: none
+		sourceColumn: value.createdDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.createReportEmbedURL'
+		dataType: string
+		lineageTag: c3df1913-9b20-436b-ace8-da3b4a78809e
+		summarizeBy: none
+		sourceColumn: value.createReportEmbedURL
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.qnaEmbedURL'
+		dataType: string
+		lineageTag: 2b8031a1-916e-4b0e-b134-84e6d15d96a1
+		summarizeBy: none
+		sourceColumn: value.qnaEmbedURL
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.upstreamDatasets'
+		dataType: string
+		lineageTag: e4a860c4-f2d5-412b-97d0-f0e46fa51607
+		summarizeBy: none
+		sourceColumn: value.upstreamDatasets
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.users'
+		dataType: string
+		lineageTag: 66b4bc5e-5b34-4edb-842d-9b9b42e0cf4f
+		summarizeBy: none
+		sourceColumn: value.users
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.queryScaleOutSettings.autoSyncReadOnlyReplicas'
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d8ff1947-7e5d-476e-b01a-44604c5bdc28
+		summarizeBy: none
+		sourceColumn: value.queryScaleOutSettings.autoSyncReadOnlyReplicas
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'value.queryScaleOutSettings.maxReadOnlyReplicas'
+		dataType: int64
+		formatString: 0
+		lineageTag: 62556800-0417-4507-8cd5-5d727efa8a62
+		summarizeBy: sum
+		sourceColumn: value.queryScaleOutSettings.maxReadOnlyReplicas
+
+		annotation SummarizationSetBy = Automatic
+
+	partition datasets = m
+		mode: import
+		source =
+				let
+				    Source = Json.Document(Web.Contents("https://api.powerbi.com/v1.0/myorg/groups/3bf5b678-13cd-4ffe-bdbb-28941f9d30d6/datasets", [Headers=[Authorization="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik1HTHFqOThWTkxvWGFGZnBKQ0JwZ0I0SmFLcyIsImtpZCI6Ik1HTHFqOThWTkxvWGFGZnBKQ0JwZ0I0SmFLcyJ9.eyJhdWQiOiJodHRwczovL2FuYWx5c2lzLndpbmRvd3MubmV0L3Bvd2VyYmkvYXBpIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZTRkOThkZDItOTE5OS00MmU1LWJhOGItZGEzZTc2M2VkZTJlLyIsImlhdCI6MTcyMDY4NjgyMCwibmJmIjoxNzIwNjg2ODIwLCJleHAiOjE3MjA2OTE1NzMsImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBVlFBcS84WEFBQUF0bit3cEtJQVpoSUZBOXBpMTFpYWFlSUFoS29hb3pobXRBZnZWSU9YQWYwYW1lUUJtd2xmNUdKcWVpVDVEa1VoWmJvdGxUOWxvTkRGZjBxWnEvSnZGNGo3bDFTSlRZMGJ2VWRsNTFJYk1SVT0iLCJhbXIiOlsicHdkIiwibWZhIl0sImFwcGlkIjoiMThmYmNhMTYtMjIyNC00NWY2LTg1YjAtZjdiZjJiMzliM2YzIiwiYXBwaWRhY3IiOiIwIiwiZmFtaWx5X25hbWUiOiJZYWR1d2Fuc2hpIiwiZ2l2ZW5fbmFtZSI6IlJpc2hhYmgiLCJpZHR5cCI6InVzZXIiLCJpcGFkZHIiOiIxNC45OC4yNDIuMjQzIiwibmFtZSI6IlJpc2hhYmggWWFkdXdhbnNoaSB8IE1BUSBTb2Z0d2FyZSIsIm9pZCI6ImYwODUxM2RjLTMzYzMtNDFjNS05ZWE2LTI5ZTUyN2MxMWFiZiIsInB1aWQiOiIxMDAzMjAwMkYzQUE0MDY4IiwicmgiOiIwLkFRY0EwbzNaNUptUjVVSzZpOW8tZGo3ZUxna0FBQUFBQUFBQXdBQUFBQUFBQUFBSEFEUS4iLCJzY3AiOiJBcHAuUmVhZC5BbGwgQ2FwYWNpdHkuUmVhZC5BbGwgQ2FwYWNpdHkuUmVhZFdyaXRlLkFsbCBDb250ZW50LkNyZWF0ZSBEYXNoYm9hcmQuUmVhZC5BbGwgRGFzaGJvYXJkLlJlYWRXcml0ZS5BbGwgRGF0YWZsb3cuUmVhZC5BbGwgRGF0YWZsb3cuUmVhZFdyaXRlLkFsbCBEYXRhc2V0LlJlYWQuQWxsIERhdGFzZXQuUmVhZFdyaXRlLkFsbCBHYXRld2F5LlJlYWQuQWxsIEdhdGV3YXkuUmVhZFdyaXRlLkFsbCBJdGVtLkV4ZWN1dGUuQWxsIEl0ZW0uUmVhZFdyaXRlLkFsbCBJdGVtLlJlc2hhcmUuQWxsIE9uZUxha2UuUmVhZC5BbGwgT25lTGFrZS5SZWFkV3JpdGUuQWxsIFBpcGVsaW5lLkRlcGxveSBQaXBlbGluZS5SZWFkLkFsbCBQaXBlbGluZS5SZWFkV3JpdGUuQWxsIFJlcG9ydC5SZWFkV3JpdGUuQWxsIFJlcHJ0LlJlYWQuQWxsIFN0b3JhZ2VBY2NvdW50LlJlYWQuQWxsIFN0b3JhZ2VBY2NvdW50LlJlYWRXcml0ZS5BbGwgVGVuYW50LlJlYWQuQWxsIFRlbmFudC5SZWFkV3JpdGUuQWxsIFVzZXJTdGF0ZS5SZWFkV3JpdGUuQWxsIFdvcmtzcGFjZS5HaXRDb21taXQuQWxsIFdvcmtzcGFjZS5HaXRVcGRhdGUuQWxsIFdvcmtzcGFjZS5SZWFkLkFsbCBXb3Jrc3BhY2UuUmVhZFdyaXRlLkFsbCIsInN1YiI6ImdwbHhZN3oyU2VlbmxqQUdSWnlrTmp6N254SnBMeTRJVXFoZFEtUEIwcUEiLCJ0aWQiOiJlNGQ5OGRkMi05MTk5LTQyZTUtYmE4Yi1kYTNlNzYzZWRlMmUiLCJ1bmlxdWVfbmFtZSI6InJpc2hhYmh5QG1hcXNvZnR3YXJlLmNvbSIsInVwbiI6InJpc2hhYmh5QG1hcXNvZnR3YXJlLmNvbSIsInV0aSI6ImlWbmkwNC1yNkVPQzJwSkFWTk1NQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfaWRyZWwiOiIxIDYifQ.xeaUlKSo-3ZiKVjFHSA-SpgpniOdzprty70tNy4kWkxmdOTHE4Idz-4-PW0Hu1cEnE6yQkovwPPeDbHDgPNKTuGZCjFwKI7OCNHbKL1yy5LQjNbMqN_qubxbAW3TS78QPNBcO-4gEUKml8_7zb_1ViIs_ycDr6mBsploxPrBD0218bTqjurbBWSdJYy5wwSPQp0ZlPM1h7kzKb6whHTcMkUbKUIbuTv0dbmkJNMoesvE3slc5Jrpegz91xmn5GxizvocCnPhwygPhF2fkflSknYiPKBlhta0_vzO4ZSVvOK3v79gXXAPFFAci-_EWEsUMHVD-6FgM06jZpE2xPjOrQ"]])),
+				    #"Converted to Table" = Table.FromRecords({Source}),
+				    #"Expanded value" = Table.ExpandListColumn(#"Converted to Table", "value"),
+				    #"Expanded value1" = Table.ExpandRecordColumn(#"Expanded value", "value", {"id", "name", "webUrl", "addRowsAPIEnabled", "configuredBy", "isRefreshable", "isEffectiveIdentityRequired", "isEffectiveIdentityRolesRequired", "isOnPremGatewayRequired", "targetStorageMode", "createdDate", "createReportEmbedURL", "qnaEmbedURL", "upstreamDatasets", "users", "queryScaleOutSettings"}, {"value.id", "value.name", "value.webUrl", "value.addRowsAPIEnabled", "value.configuredBy", "value.isRefreshable", "value.isEffectiveIdentityRequired", "value.isEffectiveIdentityRolesRequired", "value.isOnPremGatewayRequired", "value.targetStorageMode", "value.createdDate", "value.createReportEmbedURL", "value.qnaEmbedURL", "value.upstreamDatasets", "value.users", "value.queryScaleOutSettings"}),
+				    #"Expanded value.queryScaleOutSettings" = Table.ExpandRecordColumn(#"Expanded value1", "value.queryScaleOutSettings", {"autoSyncReadOnlyReplicas", "maxReadOnlyReplicas"}, {"value.queryScaleOutSettings.autoSyncReadOnlyReplicas", "value.queryScaleOutSettings.maxReadOnlyReplicas"}),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Expanded value.queryScaleOutSettings",{{"@odata.context", type text}, {"value.id", type text}, {"value.name", type text}, {"value.webUrl", type text}, {"value.addRowsAPIEnabled", type logical}, {"value.configuredBy", type text}, {"value.isRefreshable", type logical}, {"value.isEffectiveIdentityRequired", type logical}, {"value.isEffectiveIdentityRolesRequired", type logical}, {"value.isOnPremGatewayRequired", type logical}, {"value.targetStorageMode", type text}, {"value.createdDate", type datetime}, {"value.createReportEmbedURL", type text}, {"value.qnaEmbedURL", type text}, {"value.upstreamDatasets", type any}, {"value.users", type any}, {"value.queryScaleOutSettings.autoSyncReadOnlyReplicas", type logical}, {"value.queryScaleOutSettings.maxReadOnlyReplicas", Int64.Type}}),
+				    #"Expanded value.upstreamDatasets" = Table.ExpandListColumn(#"Changed Type", "value.upstreamDatasets"),
+				    #"Expanded value.users" = Table.ExpandListColumn(#"Expanded value.upstreamDatasets", "value.users")
+				in
+				    #"Expanded value.users"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

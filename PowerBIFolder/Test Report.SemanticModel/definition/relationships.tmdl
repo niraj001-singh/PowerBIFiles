@@ -1,0 +1,29 @@
+relationship ba0bebe0-11c2-4ab6-8bd2-23f23265a219
+	relyOnReferentialIntegrity
+	fromColumn: Sales.ProductID
+	toColumn: Product.ProductID
+
+relationship efbdd3ae-f286-4733-a2b9-d798b00ef118
+	relyOnReferentialIntegrity
+	fromColumn: State.RegionID
+	toColumn: Region.RegionID
+
+relationship dd7eb9ea-66fb-421e-84e5-2ca2d992d6b2
+	relyOnReferentialIntegrity
+	fromColumn: Sales.CustomerStateID
+	toColumn: State.StateID
+
+relationship 5f984286-08c0-4f1c-a1f1-52000bf0b083
+	fromColumn: Sales.OrderDate
+	toColumn: Date.Date
+
+relationship 84ce32bb-9e8d-40c6-bd25-2c2354d71a9c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Table1.Date
+	toColumn: LocalDateTable_09315162-acf2-41e6-8965-7dad2bae371a.Date
+
+relationship 5697d6ee-0f65-4ea6-a78a-930ca93ff2c8
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Table2.Date
+	toColumn: LocalDateTable_2880aa8b-cf3c-41e9-8a13-7262bdc060e7.Date
+

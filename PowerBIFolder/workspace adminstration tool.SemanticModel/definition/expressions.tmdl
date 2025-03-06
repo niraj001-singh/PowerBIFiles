@@ -1,0 +1,52 @@
+expression Parameter1 = "let "
+	lineageTag: 14fe5e7e-64e9-4e4c-8885-b301e1d04be5
+	queryGroup: loadDatasetusers
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression loadRefreshes = ```
+		let
+		    Source = (datasetId) => 
+		let
+		    Source = Json.Document(Web.Contents("https://api.powerbi.com/v1.0/myorg/groups/3bf5b678-13cd-4ffe-bdbb-28941f9d30d6/datasets/"&datasetId&"/refreshes", [Headers=[Authorization="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik1HTHFqOThWTkxvWGFGZnBKQ0JwZ0I0SmFLcyIsImtpZCI6Ik1HTHFqOThWTkxvWGFGZnBKQ0JwZ0I0SmFLcyJ9.eyJhdWQiOiJodHRwczovL2FuYWx5c2lzLndpbmRvd3MubmV0L3Bvd2VyYmkvYXBpIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZTRkOThkZDItOTE5OS00MmU1LWJhOGItZGEzZTc2M2VkZTJlLyIsImlhdCI6MTcyMDY4NjgyMCwibmJmIjoxNzIwNjg2ODIwLCJleHAiOjE3MjA2OTE1NzMsImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBVlFBcS84WEFBQUF0bit3cEtJQVpoSUZBOXBpMTFpYWFlSUFoS29hb3pobXRBZnZWSU9YQWYwYW1lUUJtd2xmNUdKcWVpVDVEa1VoWmJvdGxUOWxvTkRGZjBxWnEvSnZGNGo3bDFTSlRZMGJ2VWRsNTFJYk1SVT0iLCJhbXIiOlsicHdkIiwibWZhIl0sImFwcGlkIjoiMThmYmNhMTYtMjIyNC00NWY2LTg1YjAtZjdiZjJiMzliM2YzIiwiYXBwaWRhY3IiOiIwIiwiZmFtaWx5X25hbWUiOiJZYWR1d2Fuc2hpIiwiZ2l2ZW5fbmFtZSI6IlJpc2hhYmgiLCJpZHR5cCI6InVzZXIiLCJpcGFkZHIiOiIxNC45OC4yNDIuMjQzIiwibmFtZSI6IlJpc2hhYmggWWFkdXdhbnNoaSB8IE1BUSBTb2Z0d2FyZSIsIm9pZCI6ImYwODUxM2RjLTMzYzMtNDFjNS05ZWE2LTI5ZTUyN2MxMWFiZiIsInB1aWQiOiIxMDAzMjAwMkYzQUE0MDY4IiwicmgiOiIwLkFRY0EwbzNaNUptUjVVSzZpOW8tZGo3ZUxna0FBQUFBQUFBQXdBQUFBQUFBQUFBSEFEUS4iLCJzY3AiOiJBcHAuUmVhZC5BbGwgQ2FwYWNpdHkuUmVhZC5BbGwgQ2FwYWNpdHkuUmVhZFdyaXRlLkFsbCBDb250ZW50LkNyZWF0ZSBEYXNoYm9hcmQuUmVhZC5BbGwgRGFzaGJvYXJkLlJlYWRXcml0ZS5BbGwgRGF0YWZsb3cuUmVhZC5BbGwgRGF0YWZsb3cuUmVhZFdyaXRlLkFsbCBEYXRhc2V0LlJlYWQuQWxsIERhdGFzZXQuUmVhZFdyaXRlLkFsbCBHYXRld2F5LlJlYWQuQWxsIEdhdGV3YXkuUmVhZFdyaXRlLkFsbCBJdGVtLkV4ZWN1dGUuQWxsIEl0ZW0uUmVhZFdyaXRlLkFsbCBJdGVtLlJlc2hhcmUuQWxsIE9uZUxha2UuUmVhZC5BbGwgT25lTGFrZS5SZWFkV3JpdGUuQWxsIFBpcGVsaW5lLkRlcGxveSBQaXBlbGluZS5SZWFkLkFsbCBQaXBlbGluZS5SZWFkV3JpdGUuQWxsIFJlcG9ydC5SZWFkV3JpdGUuQWxsIFJlcHJ0LlJlYWQuQWxsIFN0b3JhZ2VBY2NvdW50LlJlYWQuQWxsIFN0b3JhZ2VBY2NvdW50LlJlYWRXcml0ZS5BbGwgVGVuYW50LlJlYWQuQWxsIFRlbmFudC5SZWFkV3JpdGUuQWxsIFVzZXJTdGF0ZS5SZWFkV3JpdGUuQWxsIFdvcmtzcGFjZS5HaXRDb21taXQuQWxsIFdvcmtzcGFjZS5HaXRVcGRhdGUuQWxsIFdvcmtzcGFjZS5SZWFkLkFsbCBXb3Jrc3BhY2UuUmVhZFdyaXRlLkFsbCIsInN1YiI6ImdwbHhZN3oyU2VlbmxqQUdSWnlrTmp6N254SnBMeTRJVXFoZFEtUEIwcUEiLCJ0aWQiOiJlNGQ5OGRkMi05MTk5LTQyZTUtYmE4Yi1kYTNlNzYzZWRlMmUiLCJ1bmlxdWVfbmFtZSI6InJpc2hhYmh5QG1hcXNvZnR3YXJlLmNvbSIsInVwbiI6InJpc2hhYmh5QG1hcXNvZnR3YXJlLmNvbSIsInV0aSI6ImlWbmkwNC1yNkVPQzJwSkFWTk1NQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfaWRyZWwiOiIxIDYifQ.xeaUlKSo-3ZiKVjFHSA-SpgpniOdzprty70tNy4kWkxmdOTHE4Idz-4-PW0Hu1cEnE6yQkovwPPeDbHDgPNKTuGZCjFwKI7OCNHbKL1yy5LQjNbMqN_qubxbAW3TS78QPNBcO-4gEUKml8_7zb_1ViIs_ycDr6mBsploxPrBD0218bTqjurbBWSdJYy5wwSPQp0ZlPM1h7kzKb6whHTcMkUbKUIbuTv0dbmkJNMoesvE3slc5Jrpegz91xmn5GxizvocCnPhwygPhF2fkflSknYiPKBlhta0_vzO4ZSVvOK3v79gXXAPFFAci-_EWEsUMHVD-6FgM06jZpE2xPjOrQ"]])),
+		    #"Converted to Table" = Table.FromRecords({Source}),
+		    #"Expanded value" = Table.ExpandListColumn(#"Converted to Table", "value"),
+		    #"Expanded value1" = Table.ExpandRecordColumn(#"Expanded value", "value", {"requestId", "id", "refreshType", "startTime", "endTime", "status", "refreshAttempts"}, {"value.requestId", "value.id", "value.refreshType", "value.startTime", "value.endTime", "value.status", "value.refreshAttempts"}),
+		    #"Expanded value.refreshAttempts" = Table.ExpandListColumn(#"Expanded value1", "value.refreshAttempts"),
+		    #"Expanded value.refreshAttempts1" = Table.ExpandRecordColumn(#"Expanded value.refreshAttempts", "value.refreshAttempts", {"attemptId", "startTime", "endTime", "type"}, {"value.refreshAttempts.attemptId", "value.refreshAttempts.startTime", "value.refreshAttempts.endTime", "value.refreshAttempts.type"}),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Expanded value.refreshAttempts1",{{"@odata.context", type text}, {"value.requestId", type text}, {"value.id", Int64.Type}, {"value.refreshType", type text}, {"value.startTime", type datetime}, {"value.endTime", type datetime}, {"value.status", type text}, {"value.refreshAttempts.attemptId", Int64.Type}, {"value.refreshAttempts.startTime", type datetime}, {"value.refreshAttempts.endTime", type datetime}, {"value.refreshAttempts.type", type text}})
+		in
+		    #"Changed Type"
+		in
+		    Source
+		```
+	lineageTag: 0891273a-8f5a-4e03-ac05-3a44acd80841
+	queryGroup: 'load refreshes'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Function
+
+expression loadDatasetusers = ```
+		let
+		    Source = (datasetId) => 
+		let
+		    Source = Json.Document(Web.Contents("https://api.powerbi.com/v1.0/myorg/groups/3bf5b678-13cd-4ffe-bdbb-28941f9d30d6/datasets/"&datasetId&"/users", [Headers=[Authorization="Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Ik1HTHFqOThWTkxvWGFGZnBKQ0JwZ0I0SmFLcyIsImtpZCI6Ik1HTHFqOThWTkxvWGFGZnBKQ0JwZ0I0SmFLcyJ9.eyJhdWQiOiJodHRwczovL2FuYWx5c2lzLndpbmRvd3MubmV0L3Bvd2VyYmkvYXBpIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvZTRkOThkZDItOTE5OS00MmU1LWJhOGItZGEzZTc2M2VkZTJlLyIsImlhdCI6MTcyMDY4NjgyMCwibmJmIjoxNzIwNjg2ODIwLCJleHAiOjE3MjA2OTE1NzMsImFjY3QiOjAsImFjciI6IjEiLCJhaW8iOiJBVlFBcS84WEFBQUF0bit3cEtJQVpoSUZBOXBpMTFpYWFlSUFoS29hb3pobXRBZnZWSU9YQWYwYW1lUUJtd2xmNUdKcWVpVDVEa1VoWmJvdGxUOWxvTkRGZjBxWnEvSnZGNGo3bDFTSlRZMGJ2VWRsNTFJYk1SVT0iLCJhbXIiOlsicHdkIiwibWZhIl0sImFwcGlkIjoiMThmYmNhMTYtMjIyNC00NWY2LTg1YjAtZjdiZjJiMzliM2YzIiwiYXBwaWRhY3IiOiIwIiwiZmFtaWx5X25hbWUiOiJZYWR1d2Fuc2hpIiwiZ2l2ZW5fbmFtZSI6IlJpc2hhYmgiLCJpZHR5cCI6InVzZXIiLCJpcGFkZHIiOiIxNC45OC4yNDIuMjQzIiwibmFtZSI6IlJpc2hhYmggWWFkdXdhbnNoaSB8IE1BUSBTb2Z0d2FyZSIsIm9pZCI6ImYwODUxM2RjLTMzYzMtNDFjNS05ZWE2LTI5ZTUyN2MxMWFiZiIsInB1aWQiOiIxMDAzMjAwMkYzQUE0MDY4IiwicmgiOiIwLkFRY0EwbzNaNUptUjVVSzZpOW8tZGo3ZUxna0FBQUFBQUFBQXdBQUFBQUFBQUFBSEFEUS4iLCJzY3AiOiJBcHAuUmVhZC5BbGwgQ2FwYWNpdHkuUmVhZC5BbGwgQ2FwYWNpdHkuUmVhZFdyaXRlLkFsbCBDb250ZW50LkNyZWF0ZSBEYXNoYm9hcmQuUmVhZC5BbGwgRGFzaGJvYXJkLlJlYWRXcml0ZS5BbGwgRGF0YWZsb3cuUmVhZC5BbGwgRGF0YWZsb3cuUmVhZFdyaXRlLkFsbCBEYXRhc2V0LlJlYWQuQWxsIERhdGFzZXQuUmVhZFdyaXRlLkFsbCBHYXRld2F5LlJlYWQuQWxsIEdhdGV3YXkuUmVhZFdyaXRlLkFsbCBJdGVtLkV4ZWN1dGUuQWxsIEl0ZW0uUmVhZFdyaXRlLkFsbCBJdGVtLlJlc2hhcmUuQWxsIE9uZUxha2UuUmVhZC5BbGwgT25lTGFrZS5SZWFkV3JpdGUuQWxsIFBpcGVsaW5lLkRlcGxveSBQaXBlbGluZS5SZWFkLkFsbCBQaXBlbGluZS5SZWFkV3JpdGUuQWxsIFJlcG9ydC5SZWFkV3JpdGUuQWxsIFJlcHJ0LlJlYWQuQWxsIFN0b3JhZ2VBY2NvdW50LlJlYWQuQWxsIFN0b3JhZ2VBY2NvdW50LlJlYWRXcml0ZS5BbGwgVGVuYW50LlJlYWQuQWxsIFRlbmFudC5SZWFkV3JpdGUuQWxsIFVzZXJTdGF0ZS5SZWFkV3JpdGUuQWxsIFdvcmtzcGFjZS5HaXRDb21taXQuQWxsIFdvcmtzcGFjZS5HaXRVcGRhdGUuQWxsIFdvcmtzcGFjZS5SZWFkLkFsbCBXb3Jrc3BhY2UuUmVhZFdyaXRlLkFsbCIsInN1YiI6ImdwbHhZN3oyU2VlbmxqQUdSWnlrTmp6N254SnBMeTRJVXFoZFEtUEIwcUEiLCJ0aWQiOiJlNGQ5OGRkMi05MTk5LTQyZTUtYmE4Yi1kYTNlNzYzZWRlMmUiLCJ1bmlxdWVfbmFtZSI6InJpc2hhYmh5QG1hcXNvZnR3YXJlLmNvbSIsInVwbiI6InJpc2hhYmh5QG1hcXNvZnR3YXJlLmNvbSIsInV0aSI6ImlWbmkwNC1yNkVPQzJwSkFWTk1NQUEiLCJ2ZXIiOiIxLjAiLCJ3aWRzIjpbImI3OWZiZjRkLTNlZjktNDY4OS04MTQzLTc2YjE5NGU4NTUwOSJdLCJ4bXNfaWRyZWwiOiIxIDYifQ.xeaUlKSo-3ZiKVjFHSA-SpgpniOdzprty70tNy4kWkxmdOTHE4Idz-4-PW0Hu1cEnE6yQkovwPPeDbHDgPNKTuGZCjFwKI7OCNHbKL1yy5LQjNbMqN_qubxbAW3TS78QPNBcO-4gEUKml8_7zb_1ViIs_ycDr6mBsploxPrBD0218bTqjurbBWSdJYy5wwSPQp0ZlPM1h7kzKb6whHTcMkUbKUIbuTv0dbmkJNMoesvE3slc5Jrpegz91xmn5GxizvocCnPhwygPhF2fkflSknYiPKBlhta0_vzO4ZSVvOK3v79gXXAPFFAci-_EWEsUMHVD-6FgM06jZpE2xPjOrQ"]])),
+		    #"Converted to Table" = Table.FromRecords({Source}),
+		    #"Expanded value" = Table.ExpandListColumn(#"Converted to Table", "value"),
+		    #"Expanded value1" = Table.ExpandRecordColumn(#"Expanded value", "value", {"datasetUserAccessRight", "identifier", "principalType"}, {"value.datasetUserAccessRight", "value.identifier", "value.principalType"}),
+		    #"Changed Type" = Table.TransformColumnTypes(#"Expanded value1",{{"@odata.context", type text}, {"value.datasetUserAccessRight", type text}, {"value.identifier", type text}, {"value.principalType", type text}})
+		in
+		    #"Changed Type"
+		in
+		    Source
+		```
+	lineageTag: 12f64833-34a3-48bf-9970-f650da7c8c3d
+	queryGroup: loadDatasetusers
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Function
+

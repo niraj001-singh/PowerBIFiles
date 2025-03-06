@@ -1,0 +1,21 @@
+table 'Time Intelligence'
+	lineageTag: 65f042e3-5f88-4ed4-902f-bb57fbbfa38b
+
+	calculationGroup
+
+		calculationItem MTD = CALCULATE(SELECTEDMEASURE(), DATESMTD('Date'[Date]))
+
+		calculationItem YTD = CALCULATE(SELECTEDMEASURE(), DATESYTD('Date'[Date]))
+
+	column Name
+		dataType: string
+		lineageTag: e12dae1c-19e8-4af6-b182-a7405d17fcc1
+		sourceColumn: Name
+		sortByColumn: Ordinal
+
+	column Ordinal
+		dataType: int64
+		isHidden
+		lineageTag: 35ef79d1-09b1-4fd3-80ff-d34a04685e07
+		sourceColumn: Ordinal
+

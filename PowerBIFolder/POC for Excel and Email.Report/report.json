@@ -1,0 +1,144 @@
+{
+  "config": "{\"version\":\"5.57\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU08\",\"version\":\"5.58\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true,\"filterPaneHiddenInEditMode\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU08",
+            "path": "BaseThemes/CY24SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"visibility\":1}",
+      "displayName": "Export",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ac1f38d9e7c28b423e78",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"678a6e2d150447b46793\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":89.94331040354928,\"z\":1000,\"width\":189.06450962378725,\"height\":82.60099935019831,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"financials.Segment\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Segment\"},\"Name\":\"financials.Segment\",\"NativeReferenceName\":\"Segment\"}]},\"display\":{\"mode\":\"hidden\"},\"syncGroup\":{\"groupName\":\"Segment\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Segment'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.60,
+          "width": 189.06,
+          "x": 0.00,
+          "y": 89.94,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"9e9dc4cc4d5550a3528d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":189.06450962378725,\"y\":89.94331040354928,\"z\":2000,\"width\":189.06450962378725,\"height\":82.60099935019831,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"financials.Product\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Product\"},\"Name\":\"financials.Product\",\"NativeReferenceName\":\"Product\"}]},\"display\":{\"mode\":\"hidden\"},\"syncGroup\":{\"groupName\":\"Product\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Product'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.60,
+          "width": 189.06,
+          "x": 189.06,
+          "y": 89.94,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"da766018017d90c207d9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":378.1290192475745,\"y\":89.94331040354928,\"z\":3000,\"width\":189.06450962378725,\"height\":82.60099935019831,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"financials.Country\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Country\"},\"Name\":\"financials.Country\",\"NativeReferenceName\":\"Country\"}]},\"display\":{\"mode\":\"hidden\"},\"syncGroup\":{\"groupName\":\"Country\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Country'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.60,
+          "width": 189.06,
+          "x": 378.13,
+          "y": 89.94,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"e18c100259a0da99c24a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":291.46110056926,\"y\":77.72296015180265,\"z\":0,\"width\":696.2681846932321,\"height\":642.8336495888678,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"rdlVisual\",\"projections\":{\"parameterValues\":[{\"queryRef\":\"financials.Segment\"},{\"queryRef\":\"financials.Product\"},{\"queryRef\":\"financials.Country\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Segment\"},\"Name\":\"financials.Segment\",\"NativeReferenceName\":\"Segment\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Product\"},\"Name\":\"financials.Product\",\"NativeReferenceName\":\"Product\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Country\"},\"Name\":\"financials.Country\",\"NativeReferenceName\":\"Country\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"reportInfo\":[{\"properties\":{\"reportId\":{\"expr\":{\"Literal\":{\"Value\":\"'43b5292e-d3e9-4681-b0eb-a3449668d609'\"}}},\"workspaceId\":{\"expr\":{\"Literal\":{\"Value\":\"'3bf5b678-13cd-4ffe-bdbb-28941f9d30d6'\"}}}}}],\"parameterMapping\":[{\"properties\":{\"mappings\":{\"expr\":{\"Literal\":{\"Value\":\"'[{\\\"paramName\\\":\\\"Segment\\\",\\\"fieldName\\\":\\\"financials.Segment\\\",\\\"fieldDisplayName\\\":\\\"Segment\\\",\\\"isMultiValue\\\":true},{\\\"paramName\\\":\\\"Product\\\",\\\"fieldName\\\":\\\"financials.Product\\\",\\\"fieldDisplayName\\\":\\\"Product\\\",\\\"isMultiValue\\\":true},{\\\"paramName\\\":\\\"Country\\\",\\\"fieldName\\\":\\\"financials.Country\\\",\\\"fieldDisplayName\\\":\\\"Country\\\",\\\"isMultiValue\\\":true}]'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 642.83,
+          "width": 696.27,
+          "x": 291.46,
+          "y": 77.72,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"feb06d863c38703d7030\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":3001}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 3001.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Dashboard",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "f746d2922e727b880592",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1871407b41029a046a85\",\"layouts\":[{\"id\":0,\"position\":{\"x\":189.06450962378725,\"y\":89.94331040354928,\"z\":4000,\"width\":189.06450962378725,\"height\":82.60099935019831,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"financials.Product\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Product\"},\"Name\":\"financials.Product\",\"NativeReferenceName\":\"Product\"}]},\"syncGroup\":{\"groupName\":\"Product\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.60,
+          "width": 189.06,
+          "x": 189.06,
+          "y": 89.94,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"6d1e99de4c01dde3e6aa\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":172.54430975374757,\"z\":2000,\"width\":159.6952654103834,\"height\":53.23175513679447,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Export excel using URL'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'WebUrl'\"}}},\"webUrl\":{\"expr\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"financials\"}},\"Property\":\"Export PR\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 53.23,
+          "width": 159.70,
+          "x": 0.00,
+          "y": 172.54,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"86eaca3238320b9ad674\",\"layouts\":[{\"id\":0,\"position\":{\"x\":378.1290192475745,\"y\":89.94331040354928,\"z\":5000,\"width\":189.06450962378725,\"height\":82.60099935019831,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"financials.Country\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Country\"},\"Name\":\"financials.Country\",\"NativeReferenceName\":\"Country\"}]},\"syncGroup\":{\"groupName\":\"Country\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.60,
+          "width": 189.06,
+          "x": 378.13,
+          "y": 89.94,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"9a2f9c636936c4121c77\",\"layouts\":[{\"id\":0,\"position\":{\"x\":189.449715370019,\"y\":173.25743200506008,\"z\":3000,\"width\":173.25743200506008,\"height\":53.43453510436433,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'blank'\"}}}},\"selector\":{\"id\":\"default\"}}],\"text\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}},{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Export excel using Navigation'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'PageNavigation'\"}}},\"navigationSection\":{\"expr\":{\"Literal\":{\"Value\":\"'ac1f38d9e7c28b423e78'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 53.43,
+          "width": 173.26,
+          "x": 189.45,
+          "y": 173.26,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"9acebe8e4139cc2d1059\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":89.94331040354928,\"z\":1000,\"width\":189.06450962378725,\"height\":82.60099935019831,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"financials.Segment\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Segment\"},\"Name\":\"financials.Segment\",\"NativeReferenceName\":\"Segment\"}]},\"syncGroup\":{\"groupName\":\"Segment\",\"fieldChanges\":true,\"filterChanges\":true},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{}}],\"selection\":[{\"properties\":{\"strictSingleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"selectAllCheckboxEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 82.60,
+          "width": 189.06,
+          "x": 0.00,
+          "y": 89.94,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"d596cad5bb06e185537a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":267.99435344731006,\"z\":0,\"width\":1279.397701046405,\"height\":451.5521297810841,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"financials.Segment\"},{\"queryRef\":\"financials.Product\"},{\"queryRef\":\"financials.Country\"},{\"queryRef\":\"Sum(financials. Sales)\"},{\"queryRef\":\"Sum(financials.Discounts)\"},{\"queryRef\":\"Sum(financials.Sale Price)\"},{\"queryRef\":\"financials.Discount Band\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"financials\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Segment\"},\"Name\":\"financials.Segment\",\"NativeReferenceName\":\"Segment\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Product\"},\"Name\":\"financials.Product\",\"NativeReferenceName\":\"Product\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\" Sales\"}},\"Function\":0},\"Name\":\"Sum(financials. Sales)\",\"NativeReferenceName\":\"Sum of  Sales\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discounts\"}},\"Function\":0},\"Name\":\"Sum(financials.Discounts)\",\"NativeReferenceName\":\"Sum of Discounts\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Sale Price\"}},\"Function\":0},\"Name\":\"Sum(financials.Sale Price)\",\"NativeReferenceName\":\"Sum of Sale Price\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Country\"},\"Name\":\"financials.Country\",\"NativeReferenceName\":\"Country\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"Discount Band\"},\"Name\":\"financials.Discount Band\",\"NativeReferenceName\":\"Discount Band\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"grid\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"14D\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"239.94331880086554D\"}}}},\"selector\":{\"metadata\":\"financials.Segment\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"158.6461073783354D\"}}}},\"selector\":{\"metadata\":\"financials.Product\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"143.94075959722767D\"}}}},\"selector\":{\"metadata\":\"Sum(financials. Sales)\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"215.57407713595694D\"}}}},\"selector\":{\"metadata\":\"Sum(financials.Discounts)\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'Minimal'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 451.55,
+          "width": 1279.40,
+          "x": 0.00,
+          "y": 267.99,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

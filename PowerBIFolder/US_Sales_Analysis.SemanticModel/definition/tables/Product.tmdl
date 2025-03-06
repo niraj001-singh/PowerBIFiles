@@ -1,0 +1,116 @@
+table Product
+	lineageTag: 7bc8a6d0-4be4-4122-a278-30f4740bbd91
+
+	column ProductID
+		dataType: int64
+		isHidden
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 77d31948-7e31-4d39-89dd-2001c5055c90
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Channels
+		dataType: int64
+		isNullable: false
+		formatString: 0
+		sourceProviderType: tinyint
+		lineageTag: 10ed36a1-c1fb-4bc9-b563-ee664f7c204c
+		summarizeBy: none
+		sourceColumn: Channels
+
+		annotation SummarizationSetBy = Automatic
+
+	column Demographic
+		dataType: string
+		isNullable: false
+		sourceProviderType: nvarchar(50)
+		lineageTag: 7d476a0e-86dc-4f26-917f-be92ccc07f69
+		summarizeBy: none
+		sourceColumn: Demographic
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column SKU
+		dataType: string
+		lineageTag: 4903d568-906d-4b74-8de0-69cfc85f3047
+		summarizeBy: none
+		sourceColumn: SKU
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Product
+		dataType: string
+		lineageTag: 7a71f095-0650-4f05-83c5-e5ad7e7ba06b
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Category
+		dataType: string
+		lineageTag: dc8b38bf-922e-42c6-9b82-6d43487e4f9d
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column 'Item Group'
+		dataType: string
+		lineageTag: 4c301ed7-8a6f-4248-b1af-4ab01a0fd65b
+		summarizeBy: none
+		sourceColumn: Item Group
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column 'Kit Type'
+		dataType: string
+		lineageTag: d85aebcf-7075-4f0a-8d70-29346d7ad35a
+		summarizeBy: none
+		sourceColumn: Kit Type
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column RetailPrice
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: c0ca9315-b3e2-4d53-b897-e92d18471d1e
+		summarizeBy: none
+		sourceColumn: RetailPrice
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	partition Product-393d0332-6e86-4525-b706-ad273f62686f = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents(DataFilePath), null, true),
+				    dbo_Product_Table = Source{[Item="dbo_Product",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_Product_Table,{{"ProductID", Int64.Type}, {"ProductSKU", type text}, {"ProductName", type text}, {"ProductCategory", type text}, {"ItemGroup", type text}, {"KitType", type text}, {"Channels", Int64.Type}, {"Demographic", type text}, {"RetailPrice", Currency.Type}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"ProductSKU", "SKU"}, {"ProductName", "Product"}, {"ProductCategory", "Category"}, {"ItemGroup", "Item Group"}, {"KitType", "Kit Type"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Exception
+

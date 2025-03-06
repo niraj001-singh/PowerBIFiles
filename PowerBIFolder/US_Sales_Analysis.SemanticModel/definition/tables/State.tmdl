@@ -1,0 +1,65 @@
+table State
+	lineageTag: 8bc1aec0-0476-4aa8-ae3a-787bcbfd17da
+
+	column StateID
+		dataType: int64
+		isHidden
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 79aaabd2-2e57-415e-b3f9-cf284949c4a5
+		summarizeBy: none
+		sourceColumn: StateID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column RegionID
+		dataType: int64
+		isHidden
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 501c0869-4297-4c4b-92fd-cf60eb0b1560
+		summarizeBy: none
+		sourceColumn: RegionID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'State Code'
+		dataType: string
+		lineageTag: 085a1054-5a1d-4697-a9dc-2b280c814dd3
+		summarizeBy: none
+		sourceColumn: State Code
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column State
+		dataType: string
+		lineageTag: 1da27b94-db6e-4857-970e-f8b09327c73d
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	partition State-15bc2c5a-84bd-4a08-a425-79caf4a138fb = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents(DataFilePath), null, true),
+				    dbo_State_Table = Source{[Item="dbo_State",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_State_Table,{{"StateID", Int64.Type}, {"StateCode", type text}, {"StateName", type text}, {"RegionID", Int64.Type}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"StateCode", "State Code"}, {"StateName", "State"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,42 @@
+table Region
+	lineageTag: 85bb68f5-be84-4325-80d4-d1e55c582031
+
+	column RegionID
+		dataType: int64
+		isHidden
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: ff01cd6b-1aef-47dd-ae9f-bfa88f3e5105
+		summarizeBy: none
+		sourceColumn: RegionID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 87e84cf1-f49f-4873-8f99-fa333a88c195
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	partition Region-684e012a-e63b-4626-8a50-a1865da2ae87 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents(DataFilePath), null, true),
+				    dbo_Region_Table = Source{[Item="dbo_Region",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_Region_Table,{{"RegionID", Int64.Type}, {"RegionName", type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"RegionName", "Region"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

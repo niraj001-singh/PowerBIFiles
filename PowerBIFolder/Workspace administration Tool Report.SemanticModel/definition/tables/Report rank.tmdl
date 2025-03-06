@@ -1,0 +1,86 @@
+table 'Report rank'
+	lineageTag: 9bc9e8cc-d64d-400c-9561-e9fc5219cedd
+	sourceLineageTag: ceca560f-ef98-4b03-b7ac-0945c8bb4c77
+
+	measure 'Total Org Report Count' = EXTERNALMEASURE("Total Org Report Count", INTEGER, "DirectQuery to AS - Usage Metrics Report")
+		formatString: 0
+		lineageTag: 701c3e26-1ad1-4472-bab4-797936fa257a
+		sourceLineageTag: 9a847ae3-5986-4b4a-bf95-183e6ab00ceb
+		dataCategory: Uncategorized
+
+	column ReportId
+		dataType: string
+		isNullable: false
+		lineageTag: 7748676a-03b2-4476-aefe-ae160c24a2a8
+		sourceLineageTag: 4240b45f-2eae-4d1d-b07a-2cb9eab58c80
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReportId
+
+		annotation SummarizationSetBy = User
+
+	column WorkspaceId
+		dataType: string
+		isHidden
+		lineageTag: 4659d8b4-6af0-464d-8b9e-ec02dffb4542
+		sourceLineageTag: c6df53b9-36bd-482e-9a50-ca6f295260c7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: WorkspaceId
+
+		annotation SummarizationSetBy = User
+
+	column ReportViewCount
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 53398d77-b45a-4835-8a39-e5bf4188b216
+		sourceLineageTag: 9792859d-5c7d-41ab-93c2-bf3d3be686e1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: ReportViewCount
+
+		annotation SummarizationSetBy = User
+
+	column ReportRank
+		dataType: int64
+		formatString: 0
+		lineageTag: fa87ac64-19a6-434b-b50b-759b3382b973
+		sourceLineageTag: bc87aefe-1cc4-4e0c-9020-72b1a99cdea5
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: ReportRank
+
+		annotation SummarizationSetBy = User
+
+	column TotalReportCount
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 322d4b2b-c081-4e99-8159-66d02b3e88eb
+		sourceLineageTag: b53ab747-67a8-4bfd-806a-63ec701c237f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: TotalReportCount
+
+		annotation SummarizationSetBy = User
+
+	column TenantId
+		dataType: string
+		isHidden
+		lineageTag: 1a6e619a-6d73-4550-9575-326372b55cca
+		sourceLineageTag: 6fa080bb-c95a-47ef-91b6-e43a82b9b9cb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TenantId
+
+		annotation SummarizationSetBy = User
+
+	partition 'Report rank' = entity
+		mode: directQuery
+		source
+			entityName: Report rank
+			expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	annotation PBI_ResultType = Exception
+

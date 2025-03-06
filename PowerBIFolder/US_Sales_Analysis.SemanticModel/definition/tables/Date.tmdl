@@ -1,0 +1,72 @@
+table Date
+	lineageTag: 2f1a0df4-397e-4bbe-93ec-8e33e7cbd53c
+
+	measure Measure = "2nd Dashboard"
+		lineageTag: 0b1a5a57-db22-4bba-a1c7-6dfb5bea6e53
+
+	column Date
+		formatString: General Date
+		lineageTag: 376eb701-d4c4-4a78-a9fd-61aa022dc7d7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 2b06f258-1ece-4eee-a40f-b657455d70b4
+			defaultHierarchy: LocalDateTable_caee39a0-dab8-4152-b3ec-8dac9afd30b6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = "CY" & FORMAT([Date], "yyyy")
+		lineageTag: 5d731634-f345-4e8a-8a22-688d3f2f206e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Quarter = [Year] & " Q" & ROUNDUP(MONTH([Date]) / 3, 0)
+		lineageTag: 050badfc-e5ff-4d87-8c8e-93bf7a759b0d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column Month = FORMAT([Date], "yyyy MMM")
+		lineageTag: d9937319-6a02-4a6d-82ce-7ccea5109afb
+		summarizeBy: none
+		sortByColumn: MonthKey
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isText":true}
+
+	column MonthKey = (YEAR([Date]) * 100) + MONTH([Date])
+		isHidden
+		formatString: 0
+		lineageTag: d186a4d0-e2cc-4d0e-a9d6-c7d9b7623ab9
+		summarizeBy: none
+
+		annotation SummarizationSetBy = User
+
+	hierarchy Calendar
+		lineageTag: 339c901c-c353-49bf-994a-7c35fefa509a
+
+		level Year
+			lineageTag: a62b940e-fccd-4983-ae8d-f3e968120bcf
+			column: Year
+
+		level Quarter
+			lineageTag: 3cbb4428-87e8-4f42-b68a-bcdb45d7c686
+			column: Quarter
+
+		level Month
+			lineageTag: c6e05325-9c5a-42ea-97f0-588252e5b6c6
+			column: Month
+
+	partition Date-4f89db24-1865-4a72-bcc2-ecce5adcb92e = calculated
+		mode: import
+		source = CALENDARAUTO()
+

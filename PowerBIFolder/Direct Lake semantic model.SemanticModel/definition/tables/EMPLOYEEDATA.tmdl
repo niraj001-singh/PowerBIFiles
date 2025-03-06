@@ -1,0 +1,156 @@
+table EMPLOYEEDATA
+	lineageTag: 4bc0f952-b11f-4812-a400-adbd495c4c63
+	sourceLineageTag: [dbo].[EMPLOYEEDATA]
+
+	column EEID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: f5fc68ca-ca19-4195-9002-736ab8be1c35
+		sourceLineageTag: EEID
+		summarizeBy: none
+		sourceColumn: EEID
+
+		annotation SummarizationSetBy = Automatic
+
+	column FULL_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7b2ed272-1eac-45b8-b443-d7a03243b581
+		sourceLineageTag: FULL_NAME
+		summarizeBy: none
+		sourceColumn: FULL_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column JOB_TITLE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 03d7dcf3-142e-4dc8-98f7-34a7253a9c94
+		sourceLineageTag: JOB_TITLE
+		summarizeBy: none
+		sourceColumn: JOB_TITLE
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTMENT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 66bcd096-21e7-4bf5-a1a1-ee35097c518f
+		sourceLineageTag: DEPARTMENT
+		summarizeBy: none
+		sourceColumn: DEPARTMENT
+
+		annotation SummarizationSetBy = Automatic
+
+	column BUSINESS_UNIT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a746a866-9fdd-482e-aad4-a2ff8a6f6ab9
+		sourceLineageTag: BUSINESS_UNIT
+		summarizeBy: none
+		sourceColumn: BUSINESS_UNIT
+
+		annotation SummarizationSetBy = Automatic
+
+	column GENDER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2d7aed6f-ef98-4759-a4b0-19b0d17318b5
+		sourceLineageTag: GENDER
+		summarizeBy: none
+		sourceColumn: GENDER
+
+		annotation SummarizationSetBy = Automatic
+
+	column ETHNICITY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 455aad29-58d7-48e4-a595-4d91ad31b5f2
+		sourceLineageTag: ETHNICITY
+		summarizeBy: none
+		sourceColumn: ETHNICITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column AGE
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 7430e3fc-be64-451e-9ff1-89432c3470c3
+		sourceLineageTag: AGE
+		summarizeBy: sum
+		sourceColumn: AGE
+
+		annotation SummarizationSetBy = Automatic
+
+	column HIRE_DATE
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: ec80f50f-75c7-4ae9-90fc-87f510a2af36
+		sourceLineageTag: HIRE_DATE
+		summarizeBy: none
+		sourceColumn: HIRE_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column ANNUAL_SALARY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 79e14146-c870-4dd2-b600-aa0d6c7bedc3
+		sourceLineageTag: ANNUAL_SALARY
+		summarizeBy: none
+		sourceColumn: ANNUAL_SALARY
+
+		annotation SummarizationSetBy = Automatic
+
+	column Bonus
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b7823476-a920-4e2e-81a4-21f15f5be614
+		sourceLineageTag: Bonus
+		summarizeBy: none
+		sourceColumn: Bonus
+
+		annotation SummarizationSetBy = Automatic
+
+	column COUNTRY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b7c77a1c-6d64-418f-8df9-7df3b19f05ca
+		sourceLineageTag: COUNTRY
+		summarizeBy: none
+		sourceColumn: COUNTRY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CITY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2afc6fcb-9d4f-4e53-a0f9-d710583803aa
+		sourceLineageTag: CITY
+		summarizeBy: none
+		sourceColumn: CITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXIT_DATE
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: ae27a339-e35c-42f5-839f-44f4c2a4ce0f
+		sourceLineageTag: EXIT_DATE
+		summarizeBy: none
+		sourceColumn: EXIT_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition EMPLOYEEDATA = entity
+		mode: directLake
+		source
+			entityName: EMPLOYEEDATA
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

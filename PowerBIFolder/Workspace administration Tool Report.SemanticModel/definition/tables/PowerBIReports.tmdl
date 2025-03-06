@@ -1,0 +1,105 @@
+table PowerBIReports
+	lineageTag: b79cdcf1-3e4c-45f4-adba-5079468dd6cc
+
+	column id
+		dataType: string
+		lineageTag: cd1c976d-f013-46b8-871a-2038bfe03583
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column reportType
+		dataType: string
+		lineageTag: cf98f485-1874-4cbc-ac8a-d495f0f712da
+		summarizeBy: none
+		sourceColumn: reportType
+
+		annotation SummarizationSetBy = Automatic
+
+	column reportName
+		dataType: string
+		lineageTag: b439e1fb-13da-4dcb-9d1c-1ab7b6640bc0
+		summarizeBy: none
+		sourceColumn: reportName
+
+		annotation SummarizationSetBy = Automatic
+
+	column webUrl
+		dataType: string
+		lineageTag: 9fe3167c-0f22-4d7a-a6e7-c2a4ef3c98a9
+		summarizeBy: none
+		sourceColumn: webUrl
+
+		annotation SummarizationSetBy = Automatic
+
+	column embedUrl
+		dataType: string
+		lineageTag: 4f78efbf-b3a3-4b05-8b50-a4ba1688d9a1
+		summarizeBy: none
+		sourceColumn: embedUrl
+
+		annotation SummarizationSetBy = Automatic
+
+	column isFromPbix
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 6898b5e8-e45c-44af-b830-61d8847210de
+		summarizeBy: none
+		sourceColumn: isFromPbix
+
+		annotation SummarizationSetBy = Automatic
+
+	column isOwnedByMe
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 3666bb70-7da8-4d91-9fbc-f1f0fd029283
+		summarizeBy: none
+		sourceColumn: isOwnedByMe
+
+		annotation SummarizationSetBy = Automatic
+
+	column datasetId
+		dataType: string
+		lineageTag: fe1c58ce-2f05-4b8c-bd49-b5fe20964774
+		summarizeBy: none
+		sourceColumn: datasetId
+
+		annotation SummarizationSetBy = Automatic
+
+	column datasetWorkspaceId
+		dataType: string
+		lineageTag: b53ff60b-9b9e-4eec-9616-3f8d1fb1e28c
+		summarizeBy: none
+		sourceColumn: datasetWorkspaceId
+
+		annotation SummarizationSetBy = Automatic
+
+	column users
+		dataType: string
+		lineageTag: f34ca312-a186-4905-b0f2-b67415c6caa7
+		summarizeBy: none
+		sourceColumn: users
+
+		annotation SummarizationSetBy = Automatic
+
+	column subscriptions
+		dataType: string
+		lineageTag: 56a0eb95-7679-4e96-b84d-ff619cefb203
+		summarizeBy: none
+		sourceColumn: subscriptions
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PowerBIReports = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("MAQ23611\SQLEXPRESS", "AdminGovernanceTool"),
+				  #"Navigation 1" = Source{[Schema = "dbo", Item = "PowerBIReports"]}[Data],
+				    #"Renamed Columns" = Table.RenameColumns(#"Navigation 1",{{"name", "reportName"}})
+				in
+				  #"Renamed Columns"
+
+	annotation PBI_ResultType = Table
+

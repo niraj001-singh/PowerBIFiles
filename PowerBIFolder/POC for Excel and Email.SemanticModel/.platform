@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "POC for Excel and Email"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0c44cd7d-5982-85e4-4f06-c2cc4c350537"
+  }
+}

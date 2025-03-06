@@ -1,0 +1,98 @@
+relationship f7742ed7-72dc-c506-d90a-48fc389cc9b1
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: PowerBIRefreshesScheduled.dataset_id
+	toColumn: PowerBIDatasets.id
+
+relationship 307f9747-f71b-131e-263b-0e85523eae06
+	fromColumn: PowerBIRefreshesHistory.dataset_id
+	toColumn: PowerBIDatasets.id
+
+relationship f4e39b83-99cd-6c2b-7ed9-b01a4cd7aded
+	fromColumn: PowerBIReports.datasetId
+	toColumn: PowerBIDatasets.id
+
+relationship a9f5a6bb-506e-426f-b867-390d3ab7b325
+	fromColumn: 'Report views'.CreationTime
+	toColumn: LocalDateTable_dc7eb03a-ec8b-421f-b39b-107ea1f05736.Date
+
+relationship cce0348e-6906-47cb-984c-f09fababbaeb
+	fromColumn: 'Report views'.ReportId
+	toColumn: Reports.ReportGuid
+
+relationship 9ffaf52b-7927-4e8b-9b0e-41960f8273da
+	fromColumn: 'Report views'.Date
+	toColumn: Dates.Date
+
+relationship d7cda554-0528-48cb-bb7c-6ee6e48584e4
+	fromColumn: 'Report views'.ReportId
+	toColumn: 'Workspace reports'.ReportGuid
+
+relationship 91a245b0-8f1e-4b0e-9218-8aa5864e1ad0
+	toCardinality: many
+	fromColumn: 'Report views'.UserKey
+	toColumn: Users.UserKey
+
+relationship 0f3f070f-a4a5-433f-9846-4c92075d48a7
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'Report rank'.ReportId
+	toColumn: Reports.ReportGuid
+
+relationship 49bd6f06-2407-4317-8266-2e229e1deb27
+	fromColumn: 'Report page views'.Timestamp
+	toColumn: LocalDateTable_e9fae86b-d80b-4c31-9ba4-095822014411.Date
+
+relationship 2b45ccd4-d93f-41f4-a7e5-66ec853d1ab7
+	fromColumn: 'Report page views'.SectionId
+	toColumn: 'Report pages'.SectionId
+
+relationship a062a623-0a28-47fc-9bd3-66e7bbd69c52
+	fromColumn: 'Report page views'.Date
+	toColumn: Dates.Date
+
+relationship 8700c679-52c1-4e04-8831-23636d47029d
+	toCardinality: many
+	fromColumn: 'Report page views'.UserKey
+	toColumn: Users.UserKey
+
+relationship 0e6910ec-38e0-4e82-9275-83a696104457
+	fromColumn: 'Report load times'.StartTime
+	toColumn: LocalDateTable_3b852b25-f44a-4909-b021-a7df8cabefe6.Date
+
+relationship 0611d395-28a9-46a4-9758-1c4e60867aec
+	fromColumn: 'Report load times'.EndTime
+	toColumn: LocalDateTable_3ebb0033-50be-4e6e-8081-ee8c7cf4091f.Date
+
+relationship 4653a704-1eb1-4085-bce7-f1c4d9e36f97
+	fromColumn: 'Report load times'.Timestamp
+	toColumn: LocalDateTable_d27e4379-e50d-47cf-aeac-77eb5f688306.Date
+
+relationship e0428db7-6211-4d7f-8564-3255965733c6
+	fromColumn: 'Report load times'.ReportId
+	toColumn: Reports.ReportGuid
+
+relationship 6ae82dfa-5643-4e5a-a843-51be72c3a6ad
+	fromColumn: 'Report load times'.Date
+	toColumn: Dates.Date
+
+relationship df2332c8-4fd1-4c79-9785-2420bfe6a6d5
+	fromColumn: 'Report pages'.ReportId
+	toColumn: Reports.ReportGuid
+
+relationship 02f64bf9-00d3-4c6a-9331-20c9b3f10453
+	fromColumn: Dates.Date
+	toColumn: LocalDateTable_bc207ece-a79c-4d33-a331-c40f45eb2725.Date
+
+relationship 6f894e3d-d986-4d59-9b7e-3001e273ff03
+	fromColumn: Dates.fDoW
+	toColumn: LocalDateTable_b465bb22-755a-4444-bc06-bd92af8a8952.Date
+
+relationship 54776ca9-9f84-414b-a196-614853e23a62
+	fromColumn: Dates.lDoW
+	toColumn: LocalDateTable_7e74b9e2-e4a5-4c05-8b29-c52b531c8abf.Date
+
+relationship 150798bb-52d8-433b-b450-91d103584da4
+	fromColumn: 'Workspace views'.ReportId
+	toColumn: 'Workspace reports'.ReportGuid
+

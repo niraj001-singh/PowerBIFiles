@@ -1,0 +1,6 @@
+relationship AutoDetected_a200483d-68ed-4e8a-829f-84b89fa4bd7f
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: 'workspace users'.'value.identifier'
+	toColumn: 'dataset users'.'value.identifier'
+

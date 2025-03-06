@@ -1,0 +1,53 @@
+table Users
+	lineageTag: 3c842a2d-e1d8-4502-ad3e-271d127dc610
+	sourceLineageTag: 6d5103b9-d9ce-4886-aff5-6b034dc41ea6
+
+	column UserId
+		dataType: string
+		lineageTag: ff316100-fe8b-4d0b-934a-df8994a5c121
+		sourceLineageTag: b8bb8249-7454-4110-aab8-8b8259c0dbf5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UserId
+
+		annotation SummarizationSetBy = User
+
+	column UserKey
+		dataType: string
+		lineageTag: 264839d9-d1f3-43d7-9a13-631ae9537550
+		sourceLineageTag: 7b6f9a0b-b107-497b-840f-53591eea8dee
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UserKey
+
+		annotation SummarizationSetBy = User
+
+	column UserGuid
+		dataType: string
+		isHidden
+		lineageTag: 95f47488-70f9-40cc-a642-f72dc53ce41d
+		sourceLineageTag: 16810f80-d331-4722-b04b-899d87095e6c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UserGuid
+
+		annotation SummarizationSetBy = User
+
+	column UniqueUser
+		dataType: string
+		lineageTag: 31f4c3c3-5382-478a-ba62-dbea0e873cb9
+		sourceLineageTag: 4b8bbac5-7897-4754-a0ca-0e4c8e578e5b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UniqueUser
+
+		annotation SummarizationSetBy = User
+
+	partition Users = entity
+		mode: directQuery
+		source
+			entityName: Users
+			expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	annotation PBI_ResultType = Exception
+

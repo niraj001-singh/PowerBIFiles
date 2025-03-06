@@ -1,0 +1,54 @@
+table 'Report pages'
+	lineageTag: 9db23397-4f9e-4042-bf38-ea76fae9f988
+	sourceLineageTag: 188b8e09-bf11-4400-b737-7ff61d8904f0
+
+	column ReportId
+		dataType: string
+		lineageTag: ff4d10f9-9ac4-49df-90e1-18be1d2f73a3
+		sourceLineageTag: 6ba18d5f-8652-4c1f-9b46-ed7dd792b940
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReportId
+
+		annotation SummarizationSetBy = User
+
+	column SectionId
+		dataType: string
+		isNullable: false
+		lineageTag: 2d1fb79c-dbd1-42c0-abeb-8ae01f5f9eb1
+		sourceLineageTag: 838a3e51-08e1-4160-9502-65cd4886a266
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SectionId
+
+		annotation SummarizationSetBy = User
+
+	column SectionName
+		dataType: string
+		lineageTag: 02fa1c7a-49c0-465e-9a20-ff1848c01170
+		sourceLineageTag: f6c1b906-7e88-4353-9966-39f2ad8c5ac3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SectionName
+
+		annotation SummarizationSetBy = User
+
+	column WorkspaceId
+		dataType: string
+		isHidden
+		lineageTag: 92f80837-6fa3-4521-a7eb-905864bf1227
+		sourceLineageTag: 80baa592-e19c-4ce2-98ab-10d56ab3615f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: WorkspaceId
+
+		annotation SummarizationSetBy = User
+
+	partition 'Report pages' = entity
+		mode: directQuery
+		source
+			entityName: Report pages
+			expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	annotation PBI_ResultType = Exception
+

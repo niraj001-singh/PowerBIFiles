@@ -1,0 +1,8 @@
+/// <CourseFolder>\PowerBIDevIAD\Lab01B\Starter\Data\TailspinToys2017-US.xlsx file path on your student computer
+expression DataFilePath = "D:\PowerBIDevIAD\Lab01A\Data\TailspinToys2017-US.xlsx" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 6f5817f9-d5cb-4161-a543-057222e9087d
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

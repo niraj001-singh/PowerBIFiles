@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Workspace administration Tool Report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7dd4b908-e5dd-ac9b-4b33-1bbf22d8f32d"
+  }
+}

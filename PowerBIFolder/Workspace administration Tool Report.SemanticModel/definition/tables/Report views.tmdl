@@ -1,0 +1,185 @@
+table 'Report views'
+	lineageTag: 63b8759b-0a47-4e1d-85ce-0da71d49cee0
+	sourceLineageTag: 940c0704-747b-4e04-8474-0aa28d70874b
+
+	column ReportId
+		dataType: string
+		lineageTag: 66b472f5-138e-44c3-b80c-51d51a970f29
+		sourceLineageTag: 032f562b-98e8-4f3e-a8ce-fd525821f96a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReportId
+
+		annotation SummarizationSetBy = User
+
+	column ReportType
+		dataType: string
+		lineageTag: b3db4e78-ede3-4b0a-b666-3916b24d9ec7
+		sourceLineageTag: 4bd76904-7eee-4aa0-a1ab-4d5ffc0d3c13
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReportType
+
+		annotation SummarizationSetBy = User
+
+	column ReportName
+		dataType: string
+		isHidden
+		lineageTag: f5ff1aad-12f9-4809-9cf8-8e572a7a61da
+		sourceLineageTag: 9ec3b56b-d7a6-4613-acc8-501e1743490f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReportName
+
+		annotation SummarizationSetBy = User
+
+	column AppName
+		dataType: string
+		lineageTag: aa14d37f-6cc7-4ea4-803c-0b83816971aa
+		sourceLineageTag: 281b7e8e-d3b6-495b-8340-2ff1258ed289
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AppName
+
+		annotation SummarizationSetBy = User
+
+	column UserKey
+		dataType: string
+		isHidden
+		lineageTag: dbd015c9-d192-449e-9e80-97057ba7f849
+		sourceLineageTag: 36b48f02-c55e-4357-b544-4bc573d9a40c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UserKey
+
+		annotation SummarizationSetBy = User
+
+	column UserId
+		dataType: string
+		lineageTag: 978c32cf-3c7c-486b-8d11-e773bfc9bcd5
+		sourceLineageTag: 752b614b-6e16-4108-a438-0cd80334bf48
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UserId
+
+		annotation SummarizationSetBy = User
+
+	column UserAgent
+		dataType: string
+		lineageTag: 9bd5a336-186c-4619-95c9-6eea17a7c2d5
+		sourceLineageTag: 84c4a8ac-211d-4f52-8fc4-74dcafc178d2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UserAgent
+
+		annotation SummarizationSetBy = User
+
+	column DatasetName
+		dataType: string
+		lineageTag: 15040391-4ccb-465b-9f14-25f2824d2cb4
+		sourceLineageTag: 63474dd7-919e-4848-aee0-5772fd0bbe7a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DatasetName
+
+		annotation SummarizationSetBy = User
+
+	column CapacityId
+		dataType: string
+		lineageTag: 00feee47-a43f-4ef7-bf79-439648ce0c0e
+		sourceLineageTag: 7cba8c27-9eca-411b-b926-eb59ee6f959f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CapacityId
+
+		annotation SummarizationSetBy = User
+
+	column CapacityName
+		dataType: string
+		lineageTag: a02a71ad-a110-444d-95c0-90991ab44534
+		sourceLineageTag: 7075d0d5-9250-41e1-a312-5e0512685124
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CapacityName
+
+		annotation SummarizationSetBy = User
+
+	column Date
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: a27eb5b3-c6ea-42df-8c6b-b07fb5eefe2f
+		sourceLineageTag: 52963429-b6b6-4c32-a939-070982671edc
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = User
+
+	column CreationTime
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 3ff06616-4786-415c-a716-04b64c464442
+		sourceLineageTag: 2c26bc83-c94e-463e-80da-21dd5269def4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: CreationTime
+
+		variation Variation
+			isDefault
+			relationship: a9f5a6bb-506e-426f-b867-390d3ab7b325
+			defaultHierarchy: LocalDateTable_dc7eb03a-ec8b-421f-b39b-107ea1f05736.'Date Hierarchy'
+
+		annotation SummarizationSetBy = User
+
+	column DistributionMethod
+		dataType: string
+		lineageTag: ac3a9870-6871-42f3-9efa-009f9da893be
+		sourceLineageTag: ee00af2d-8088-4f93-8c66-3585a9d83e9e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DistributionMethod
+
+		annotation SummarizationSetBy = User
+
+	column OriginalConsumptionMethod
+		dataType: string
+		lineageTag: 72be4c73-298d-4af1-91e3-2783d45970df
+		sourceLineageTag: 8fb9ba0f-1342-46ef-8d1f-b8d9b4a5265b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: OriginalConsumptionMethod
+
+		annotation SummarizationSetBy = User
+
+	column ConsumptionMethod
+		dataType: string
+		lineageTag: b02c922e-abb4-422a-9e62-42502157165a
+		sourceLineageTag: 40a23e93-0f90-43fd-ba85-9de87ef22bec
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ConsumptionMethod
+
+		annotation SummarizationSetBy = User
+
+	hierarchy 'UserAgent Hierarchy'
+		lineageTag: 6dfb79b5-4b38-4af6-bda9-88a459f2af9e
+		sourceLineageTag: 843f6174-0394-4962-9b11-a8a2162aeec9
+
+		level UserAgent
+			lineageTag: 45d8e374-7c5c-42ff-bffe-a0050ed182b9
+			sourceLineageTag: 00f6a3ad-7015-492f-8ffb-ac8632fdbfc2
+			column: UserAgent
+
+		level UserId
+			lineageTag: 9ff464c9-3f91-41ec-bfe5-20e21ed6bb80
+			sourceLineageTag: 76aabc05-9eb6-4e48-a9e9-98831f4d7043
+			column: UserId
+
+	partition 'Report views' = entity
+		mode: directQuery
+		source
+			entityName: Report views
+			expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	annotation PBI_ResultType = Exception
+

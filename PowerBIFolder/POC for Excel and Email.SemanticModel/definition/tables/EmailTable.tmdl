@@ -1,0 +1,27 @@
+table EmailTable
+	lineageTag: e2c2c78c-52f9-4f26-86c1-9a433809bfac
+
+	column Email
+		lineageTag: af4212f6-f6d3-4b66-89b4-c2f4b250889c
+		dataCategory: WebUrl
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Email]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition EmailTable = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE(
+				    "Email", STRING,
+				    {
+				        {"mailto:john.doe@example.com?subject=Meeting%20Request&body=Hi%20John,%20can%20we%20schedule%20a%20meeting%20for%20next%20week?"}
+				    }
+				)
+				
+				```
+
+	annotation PBI_Id = cfe3812dcc8446c09a2932257fc728da
+

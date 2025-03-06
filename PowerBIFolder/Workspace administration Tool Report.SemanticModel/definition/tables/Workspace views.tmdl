@@ -1,0 +1,83 @@
+table 'Workspace views'
+	lineageTag: c7807eae-6a59-456e-a68a-63f26e9a2bd7
+	sourceLineageTag: ed16c722-1441-471c-915d-0164d8fd550c
+
+	column ReportId
+		dataType: string
+		lineageTag: 9d43b4d2-4a03-4411-88eb-613af71fd1ea
+		sourceLineageTag: 6c82af29-a588-4084-b1ae-bdfd353f4040
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReportId
+
+		annotation SummarizationSetBy = User
+
+	column UserId
+		dataType: string
+		lineageTag: b1420fec-78ef-49be-ade8-39917ba48233
+		sourceLineageTag: b63bdc99-0c2c-4886-94a5-127796fef645
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UserId
+
+		annotation SummarizationSetBy = User
+
+	column DistributionMethod
+		dataType: string
+		lineageTag: a121a0ac-ec02-4222-a0a8-94f1729beb4a
+		sourceLineageTag: d325a0c9-02cb-439b-ac7e-f4540bd214b7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DistributionMethod
+
+		annotation SummarizationSetBy = User
+
+	column ConsumptionMethod
+		dataType: string
+		lineageTag: cc558f9c-74ad-48ae-9f3e-fc4692e6aa2b
+		sourceLineageTag: cfaf38cd-5b54-495d-beb6-e324abf26e41
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ConsumptionMethod
+
+		annotation SummarizationSetBy = User
+
+	column Views
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d302dc3-34a6-41b7-bb9e-12db65c1f40c
+		sourceLineageTag: 1a053eea-1796-4bdb-bf05-a9531cbf1242
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Views
+
+		annotation SummarizationSetBy = User
+
+	column UserKey
+		dataType: string
+		lineageTag: 3ea5ff88-b316-455b-a7c8-ac24c95339da
+		sourceLineageTag: 58031bde-a8a2-4086-a47b-5f2b526b2f22
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UserKey
+
+		annotation SummarizationSetBy = User
+
+	column UniqueUser
+		dataType: string
+		lineageTag: d7cb8145-3a16-42bd-9ef7-f109eb462f39
+		sourceLineageTag: b260fc66-1dce-46bc-9615-0c4422563e2c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UniqueUser
+
+		annotation SummarizationSetBy = User
+
+	partition 'Workspace views' = entity
+		mode: directQuery
+		source
+			entityName: Workspace views
+			expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	annotation PBI_ResultType = Exception
+

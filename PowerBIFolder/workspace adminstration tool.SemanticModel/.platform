@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "workspace adminstration tool"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e548ae5d-c007-83d2-4828-8cfa00033fa3"
+  }
+}

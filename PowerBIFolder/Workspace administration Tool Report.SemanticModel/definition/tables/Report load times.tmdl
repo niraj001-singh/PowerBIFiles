@@ -1,0 +1,242 @@
+table 'Report load times'
+	lineageTag: 9a269585-0498-4f90-a278-ea520fb9d586
+	sourceLineageTag: 96a140cd-8e7c-4e48-b86b-424dec870405
+
+	column Timestamp
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1b5a8694-6440-4acc-bed6-d6e4c39e1de9
+		sourceLineageTag: e00d1a4c-4de5-4ad6-9f8d-ea1684e7bc88
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Timestamp
+
+		variation Variation
+			isDefault
+			relationship: 4653a704-1eb1-4085-bce7-f1c4d9e36f97
+			defaultHierarchy: LocalDateTable_d27e4379-e50d-47cf-aeac-77eb5f688306.'Date Hierarchy'
+
+		annotation SummarizationSetBy = User
+
+	column PbiCluster
+		dataType: string
+		lineageTag: 531f8156-8d9e-4d23-83ea-b77057a1bd86
+		sourceLineageTag: 20f1d500-c0a0-4ec3-9a7e-dbb1067abd42
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: PbiCluster
+
+		annotation SummarizationSetBy = User
+
+	column AppName
+		dataType: string
+		lineageTag: 7d36f6f2-f30c-465d-a930-843ce53eee72
+		sourceLineageTag: f276504a-c331-4178-bd3f-66a0956f4b76
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AppName
+
+		annotation SummarizationSetBy = User
+
+	column TenantId
+		dataType: string
+		lineageTag: 153cdb89-d491-4186-abd9-9fbbe0fcc49a
+		sourceLineageTag: b01ff4fc-01ba-4f50-a053-ea81e3d4f670
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: TenantId
+
+		annotation SummarizationSetBy = User
+
+	column UserId
+		dataType: string
+		lineageTag: 0de6cbc5-ee58-46e9-bc8d-20aa51dfe700
+		sourceLineageTag: d46f4bb9-eed2-4a9c-bbd8-51881410d748
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UserId
+
+		annotation SummarizationSetBy = User
+
+	column ReportId
+		dataType: string
+		lineageTag: 8ae01195-6297-41e7-9d2b-03c249861388
+		sourceLineageTag: 701d4ada-4a18-469c-9567-6093d7391aaf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReportId
+
+		annotation SummarizationSetBy = User
+
+	column GroupId
+		dataType: string
+		lineageTag: 18c40597-d617-4f9e-9d3d-f700b2d04bf9
+		sourceLineageTag: a9379168-a7aa-4f68-86ea-c03e3d8f9555
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: GroupId
+
+		annotation SummarizationSetBy = User
+
+	column Client
+		dataType: string
+		lineageTag: 2261b16c-87b6-487a-8c1d-0bc7fe161e73
+		sourceLineageTag: 5bb743ad-88da-4685-96ec-5c02c10df39a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Client
+
+		annotation SummarizationSetBy = User
+
+	column StartTime
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: ce8f38f3-5da3-423c-9d11-4f2ad6a7a9ab
+		sourceLineageTag: c1674f3d-a90d-4267-8b12-41608188a052
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: StartTime
+
+		variation Variation
+			isDefault
+			relationship: 0e6910ec-38e0-4e82-9275-83a696104457
+			defaultHierarchy: LocalDateTable_3b852b25-f44a-4909-b021-a7df8cabefe6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = User
+
+	column EndTime
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: c0abdbc5-df72-4595-97de-90ff22d6868b
+		sourceLineageTag: 8c18e0ad-54f0-4b9c-bc87-9dbc388116b9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: EndTime
+
+		variation Variation
+			isDefault
+			relationship: 0611d395-28a9-46a4-9758-1c4e60867aec
+			defaultHierarchy: LocalDateTable_3ebb0033-50be-4e6e-8081-ee8c7cf4091f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = User
+
+	column DeviceOSVersion
+		dataType: string
+		lineageTag: 629672b7-694a-4a78-94b2-bbf6829ea986
+		sourceLineageTag: bab2b2f7-e550-482b-81af-31003983c3ca
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DeviceOSVersion
+
+		annotation SummarizationSetBy = User
+
+	column LocationCity
+		dataType: string
+		lineageTag: e2dbc1ea-c8f3-4dd8-922b-d1530cf4d775
+		sourceLineageTag: 839b7272-27e0-4800-99d4-7735192e6820
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: LocationCity
+
+		annotation SummarizationSetBy = User
+
+	column Country
+		dataType: string
+		lineageTag: 654db473-b008-4f4e-a7e1-397ff3e6a582
+		sourceLineageTag: 905fc576-68d5-4e3a-bcab-7f62c04b56b0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = User
+
+	column loadTime
+		dataType: int64
+		formatString: 0
+		lineageTag: 0c162fb4-b5f4-40b4-b1c9-f7a0540afea2
+		sourceLineageTag: 352cfe5c-541b-4c6b-9789-218c95f6852f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: loadTime
+
+		annotation SummarizationSetBy = User
+
+	column Date
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 0931d4c2-dc33-4fca-b07e-2f161a28a723
+		sourceLineageTag: 06b1af1f-0774-4631-bd51-343b4f7534f9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = User
+
+	column OriginalReportId
+		dataType: string
+		lineageTag: 7c656822-dd24-4d74-9bd6-84aaf451639a
+		sourceLineageTag: 3c764f5d-5c32-47ab-b654-07ff84b19ae5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: OriginalReportId
+
+		annotation SummarizationSetBy = User
+
+	column OriginalGroupId
+		dataType: string
+		lineageTag: dc013f69-bf64-4cd3-923a-c4dcacedaf0b
+		sourceLineageTag: 6943ff8d-2b33-44d4-aadf-ba15220a418b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: OriginalGroupId
+
+		annotation SummarizationSetBy = User
+
+	column DeviceBrowserVersion
+		dataType: string
+		lineageTag: a61de4e1-a404-414a-84a5-562041c5bbee
+		sourceLineageTag: 812bd21a-4515-44e4-9be6-496a24b84929
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: DeviceBrowserVersion
+
+		annotation SummarizationSetBy = User
+
+	column Browser
+		dataType: string
+		lineageTag: 9e0da752-66b1-4af0-9769-502af443110e
+		sourceLineageTag: bd0a8afc-1993-41e6-8dcf-32cd1e68b42b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Browser
+
+		annotation SummarizationSetBy = User
+
+	column AppGuid
+		dataType: string
+		lineageTag: cad58666-5482-4663-9bfa-a49c6c974239
+		sourceLineageTag: 0f219ff0-cf6f-4bda-bf05-9deca7a57a17
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: AppGuid
+
+		annotation SummarizationSetBy = User
+
+	column SessionSource
+		dataType: string
+		lineageTag: d3671770-def3-4ed3-b180-b99e2a609b52
+		sourceLineageTag: 41e4ded6-edac-4d68-b0bc-62d110e5ee6a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: SessionSource
+
+		annotation SummarizationSetBy = User
+
+	partition 'Report load times' = entity
+		mode: directQuery
+		source
+			entityName: Report load times
+			expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	annotation PBI_ResultType = Exception
+

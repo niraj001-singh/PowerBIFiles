@@ -1,0 +1,7 @@
+role Alabama
+	modelPermission: read
+
+	tablePermission State = [State] == "Alabama"
+
+	annotation PBI_Id = 846c2bb5decf4ee4852611321de9d78e
+

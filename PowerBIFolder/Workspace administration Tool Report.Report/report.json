@@ -1,0 +1,180 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.56\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Refresh Data",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "0d62881027225b469071",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0130ff37171bcc54730b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.019569471624266,\"y\":399.5303326810176,\"z\":1000,\"width\":993.1898238747553,\"height\":320.6262230919765,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"PowerBIReports.reportName\"},{\"queryRef\":\"PowerBIDatasets.datasetName\"},{\"queryRef\":\"PowerBIRefreshesScheduled.days\"},{\"queryRef\":\"PowerBIRefreshesScheduled.enabled\"},{\"queryRef\":\"PowerBIRefreshesScheduled.times\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PowerBIDatasets\",\"Type\":0},{\"Name\":\"p1\",\"Entity\":\"PowerBIRefreshesScheduled\",\"Type\":0},{\"Name\":\"p2\",\"Entity\":\"PowerBIReports\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"datasetName\"},\"Name\":\"PowerBIDatasets.datasetName\",\"NativeReferenceName\":\"datasetName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"days\"},\"Name\":\"PowerBIRefreshesScheduled.days\",\"NativeReferenceName\":\"days\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"enabled\"},\"Name\":\"PowerBIRefreshesScheduled.enabled\",\"NativeReferenceName\":\"enabled\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"times\"},\"Name\":\"PowerBIRefreshesScheduled.times\",\"NativeReferenceName\":\"times\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p2\"}},\"Property\":\"reportName\"},\"Name\":\"PowerBIReports.reportName\",\"NativeReferenceName\":\"reportName\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"days\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"187.4308887062922D\"}}}},\"selector\":{\"metadata\":\"PowerBIDatasets.datasetName\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"188.2783049705828D\"}}}},\"selector\":{\"metadata\":\"PowerBIReports.reportName\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"461.6365337467512D\"}}}},\"selector\":{\"metadata\":\"PowerBIRefreshesScheduled.days\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"73.80762734836006D\"}}}},\"selector\":{\"metadata\":\"PowerBIRefreshesScheduled.enabled\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"63.43562335161175D\"}}}},\"selector\":{\"metadata\":\"PowerBIRefreshesScheduled.times\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ContrastAlternatingRows'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 320.63,
+          "width": 993.19,
+          "x": 10.02,
+          "y": 399.53,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"01c96b805016e9ea2200\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.453720508166969,\"y\":361,\"z\":2000,\"width\":226.497277676951,\"height\":38,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Refreshes scheduled\",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"16pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 38.00,
+          "width": 226.50,
+          "x": 10.45,
+          "y": 361.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"0e1bec4e02e2d0977303\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.453720508166969,\"y\":12.77676950998185,\"z\":3000,\"width\":226.497277676951,\"height\":39.491833030852995,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Refresh History\",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"16pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 39.49,
+          "width": 226.50,
+          "x": 10.45,
+          "y": 12.78,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"0f5b8bacdc7393960c6d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1003.2093933463797,\"y\":399.5303326810176,\"z\":4000,\"width\":276.79060665362033,\"height\":320.6262230919765,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"PowerBIDatasets.datasetName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PowerBIDatasets\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"datasetName\"},\"Name\":\"PowerBIDatasets.datasetName\",\"NativeReferenceName\":\"datasetName\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"262.6516634050881D\"}}}},\"selector\":{\"metadata\":\"PowerBIDatasets.datasetName\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ContrastAlternatingRows'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 320.63,
+          "width": 276.79,
+          "x": 1003.21,
+          "y": 399.53,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"356b942372b9d851004e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1003.2093933463797,\"y\":360.70450097847356,\"z\":5000,\"width\":226.692759295499,\"height\":38.82583170254403,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Datasets\",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"16pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 38.83,
+          "width": 226.69,
+          "x": 1003.21,
+          "y": 360.70,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"a197ead02a2c0c20418e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.453720508166969,\"y\":52.26860254083484,\"z\":0,\"width\":1269.546279491833,\"height\":307.80399274047187,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"PowerBIDatasets.id\"},{\"queryRef\":\"PowerBIDatasets.name\"},{\"queryRef\":\"PowerBIDatasets.configuredBy\"},{\"queryRef\":\"PowerBIRefreshesHistory.refreshStartTime\"},{\"queryRef\":\"PowerBIRefreshesHistory.refreshEndTime\"},{\"queryRef\":\"PowerBIRefreshesHistory.status\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PowerBIDatasets\",\"Type\":0},{\"Name\":\"p1\",\"Entity\":\"PowerBIRefreshesHistory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"id\"},\"Name\":\"PowerBIDatasets.id\",\"NativeReferenceName\":\"id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"configuredBy\"},\"Name\":\"PowerBIDatasets.configuredBy\",\"NativeReferenceName\":\"configuredBy\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"datasetName\"},\"Name\":\"PowerBIDatasets.name\",\"NativeReferenceName\":\"datasetName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"refreshStartTime\"},\"Name\":\"PowerBIRefreshesHistory.refreshStartTime\",\"NativeReferenceName\":\"refreshStartTime\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"refreshEndTime\"},\"Name\":\"PowerBIRefreshesHistory.refreshEndTime\",\"NativeReferenceName\":\"refreshEndTime\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"status\"},\"Name\":\"PowerBIRefreshesHistory.status\",\"NativeReferenceName\":\"status\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"316.37260340171D\"}}}},\"selector\":{\"metadata\":\"PowerBIDatasets.name\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"245.42064328100213D\"}}}},\"selector\":{\"metadata\":\"PowerBIDatasets.configuredBy\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"338.499098664406D\"}}}},\"selector\":{\"metadata\":\"PowerBIDatasets.id\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'ContrastAlternatingRows'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"32D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 307.80,
+          "width": 1269.55,
+          "x": 10.45,
+          "y": 52.27,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Insights",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "25173dcd09d97b3010cb",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"00f989ef000346cab8e6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":401,\"z\":6000,\"width\":420.82191780821915,\"height\":40.07827788649706,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Refreshes Failed in Past 30 Days\",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"16pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 40.08,
+          "width": 420.82,
+          "x": 0.00,
+          "y": 401.00,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"0d804cfd054e8c3a0b03\",\"layouts\":[{\"id\":0,\"position\":{\"x\":807,\"y\":225,\"z\":3000,\"width\":473,\"height\":174.09001956947162,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"PowerBIDatasets.id\"},{\"queryRef\":\"PowerBIDatasets.datasetName\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PowerBIDatasets\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"id\"},\"Name\":\"PowerBIDatasets.id\",\"NativeReferenceName\":\"id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"datasetName\"},\"Name\":\"PowerBIDatasets.datasetName\",\"NativeReferenceName\":\"datasetName\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"260.4936481338336D\"}}}},\"selector\":{\"metadata\":\"PowerBIDatasets.id\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"195.66143695699088D\"}}}},\"selector\":{\"metadata\":\"PowerBIDatasets.datasetName\"}}],\"columnHeaders\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'\"}}}}}],\"values\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'AlternatingRowsNew'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filter67c60c893e7e20628d3d\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"PowerBIDatasets\"}},\"Property\":\"hasParentInCurrentWorkspace\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PowerBIDatasets\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"hasParentInCurrentWorkspace\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'No'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 174.09,
+          "width": 473.00,
+          "x": 807.00,
+          "y": 225.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"1cdd19a7568e653ab694\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":225,\"z\":5000,\"width\":809.0802348336595,\"height\":174.09001956947162,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"PowerBIDatasets.id\"},{\"queryRef\":\"PowerBIDatasets.datasetName\"},{\"queryRef\":\"PowerBIRefreshesHistory.refreshDurationMoreThan1Hr\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PowerBIDatasets\",\"Type\":0},{\"Name\":\"p1\",\"Entity\":\"PowerBIRefreshesHistory\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"id\"},\"Name\":\"PowerBIDatasets.id\",\"NativeReferenceName\":\"id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"datasetName\"},\"Name\":\"PowerBIDatasets.datasetName\",\"NativeReferenceName\":\"datasetName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"refreshDurationMoreThan1Hr\"},\"Name\":\"PowerBIRefreshesHistory.refreshDurationMoreThan1Hr\",\"NativeReferenceName\":\"refreshDurationMoreThan1Hr\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnHeaders\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'\"}}}}}],\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"293.05870885171413D\"}}}},\"selector\":{\"metadata\":\"PowerBIDatasets.id\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"302.8267538513065D\"}}}},\"selector\":{\"metadata\":\"PowerBIDatasets.datasetName\"}}],\"values\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'AlternatingRowsNew'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 174.09,
+          "width": 809.08,
+          "x": 0.00,
+          "y": 225.00,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"40281c426da0e6865176\",\"layouts\":[{\"id\":0,\"position\":{\"x\":806.5753424657534,\"y\":185.3620352250489,\"z\":8000,\"width\":473.42465753424653,\"height\":40.07827788649706,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Orphan Datasets\",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"16pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 40.08,
+          "width": 473.42,
+          "x": 806.58,
+          "y": 185.36,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"554ed0087d69b6710932\",\"layouts\":[{\"id\":0,\"position\":{\"x\":852.9158512720156,\"y\":0,\"z\":2000,\"width\":427.0841487279843,\"height\":184.1095890410959,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Meaure Table.Count datasets with no parent in current workspace\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Meaure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Count of Orphan Datasets\"},\"Name\":\"Meaure Table.Count datasets with no parent in current workspace\",\"NativeReferenceName\":\"Count of Orphan Datasets\"}]},\"columnProperties\":{\"Meaure Table.Count datasets with no parent in current workspace\":{\"displayName\":\"Count of Orphan Datasets\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"45D\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#D5D5D5'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 184.11,
+          "width": 427.08,
+          "x": 852.92,
+          "y": 0.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"8ec5150f2558144bc023\",\"layouts\":[{\"id\":0,\"position\":{\"x\":420.82191780821915,\"y\":0,\"z\":4000,\"width\":432.0939334637965,\"height\":184.1095890410959,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Meaure Table.Count of datasets taking more than one hours\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Meaure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Count of datasets taking more than one hours\"},\"Name\":\"Meaure Table.Count of datasets taking more than one hours\",\"NativeReferenceName\":\"Count of datasets taking more than one hours\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#D5D5D5'\"}}}}}}}]}}}",
+          "filters": "[]",
+          "height": 184.11,
+          "width": 432.09,
+          "x": 420.82,
+          "y": 0.00,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"b95061bae64e0e822160\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":0,\"width\":420.82191780821915,\"height\":184.1095890410959,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Meaure Table.Reports with more than 8 Refreshes\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"Meaure Table\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Reports with more than 8 Refreshes\"},\"Name\":\"Meaure Table.Reports with more than 8 Refreshes\",\"NativeReferenceName\":\"Reports with more than 8 Refreshes\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryLabels\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"Literal\":{\"Value\":\"'#D5D5D5'\"}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 184.11,
+          "width": 420.82,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"c1f1fcba5e03c56ec387\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":185.3620352250489,\"z\":7000,\"width\":809.0802348336595,\"height\":40.07827788649706,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Refreshes Taking More Than 1 Hour\",\"textStyle\":{\"fontFamily\":\"Segoe (Bold)\",\"fontSize\":\"16pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 40.08,
+          "width": 809.08,
+          "x": 0.00,
+          "y": 185.36,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"d85f5c93466b485bc108\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":452.133072407045,\"z\":1000,\"width\":1280,\"height\":268.0234833659491,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"PowerBIRefreshesHistory.dataset_id\"},{\"queryRef\":\"PowerBIDatasets.datasetName\"},{\"queryRef\":\"PowerBIRefreshesHistory.refreshType\"},{\"queryRef\":\"PowerBIRefreshesHistory.refreshStartTime\"},{\"queryRef\":\"PowerBIRefreshesHistory.refreshEndTime\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PowerBIRefreshesHistory\",\"Type\":0},{\"Name\":\"p1\",\"Entity\":\"PowerBIDatasets\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"dataset_id\"},\"Name\":\"PowerBIRefreshesHistory.dataset_id\",\"NativeReferenceName\":\"dataset_id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p1\"}},\"Property\":\"datasetName\"},\"Name\":\"PowerBIDatasets.datasetName\",\"NativeReferenceName\":\"datasetName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"refreshStartTime\"},\"Name\":\"PowerBIRefreshesHistory.refreshStartTime\",\"NativeReferenceName\":\"refreshStartTime\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"refreshEndTime\"},\"Name\":\"PowerBIRefreshesHistory.refreshEndTime\",\"NativeReferenceName\":\"refreshEndTime\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"refreshType\"},\"Name\":\"PowerBIRefreshesHistory.refreshType\",\"NativeReferenceName\":\"refreshType\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"refreshType\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"382.9104194782988D\"}}}},\"selector\":{\"metadata\":\"PowerBIDatasets.datasetName\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"330.35607491438043D\"}}}},\"selector\":{\"metadata\":\"PowerBIRefreshesHistory.dataset_id\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"124.0880364450233D\"}}}},\"selector\":{\"metadata\":\"PowerBIRefreshesHistory.refreshType\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"207.6320939334638D\"}}}},\"selector\":{\"metadata\":\"PowerBIRefreshesHistory.refreshStartTime\"}},{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"218.9041095890411D\"}}}},\"selector\":{\"metadata\":\"PowerBIRefreshesHistory.refreshEndTime\"}}],\"values\":[{\"properties\":{\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"width\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}}}}],\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'AlternatingRowsNew'\"}}}}}]}}}",
+          "filters": "[{\"name\":\"Filtereaaa6ec8a32499bae9d3\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"PowerBIRefreshesHistory\"}},\"Property\":\"status\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PowerBIRefreshesHistory\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"status\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Failed'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"isHiddenInViewMode\":false},{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"PowerBIRefreshesHistory\"}},\"Property\":\"refreshEndTime\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"p\",\"Entity\":\"PowerBIRefreshesHistory\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Between\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"p\"}},\"Property\":\"refreshEndTime\"}},\"LowerBound\":{\"DateSpan\":{\"Expression\":{\"DateAdd\":{\"Expression\":{\"DateAdd\":{\"Expression\":{\"Now\":{}},\"Amount\":1,\"TimeUnit\":0}},\"Amount\":-30,\"TimeUnit\":0}},\"TimeUnit\":0}},\"UpperBound\":{\"DateSpan\":{\"Expression\":{\"Now\":{}},\"TimeUnit\":0}}}}}]},\"type\":\"RelativeDate\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 268.02,
+          "width": 1280.00,
+          "x": 0.00,
+          "y": 452.13,
+          "z": 1000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

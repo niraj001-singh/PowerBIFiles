@@ -1,0 +1,72 @@
+table Dates
+	lineageTag: 7f022e5c-cd7a-4701-babf-7f9d4a799449
+	sourceLineageTag: 400619c0-544c-46b1-a5a0-9f6df481b7e5
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		formatString: General Number
+		lineageTag: 92ff8441-476f-4ee7-90e3-302d60f3f9c1
+		sourceLineageTag: 0d131d9c-1d9c-40db-9337-4f37205426ed
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 02f64bf9-00d3-4c6a-9331-20c9b3f10453
+			defaultHierarchy: LocalDateTable_bc207ece-a79c-4d33-a331-c40f45eb2725.'Date Hierarchy'
+
+		annotation SummarizationSetBy = User
+
+	column DoW
+		dataType: int64
+		formatString: 0
+		lineageTag: 0e7cf256-9abb-4618-99e0-4eb9604ff53a
+		sourceLineageTag: f239ab83-aadd-4111-86e8-4579f2bfc43c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: DoW
+
+		annotation SummarizationSetBy = User
+
+	column fDoW
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: e55682ea-83ed-4d38-b8e9-adfaf8f68b2a
+		sourceLineageTag: 8db85d67-b349-4e5d-9575-9b53609db79c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: fDoW
+
+		variation Variation
+			isDefault
+			relationship: 6f894e3d-d986-4d59-9b7e-3001e273ff03
+			defaultHierarchy: LocalDateTable_b465bb22-755a-4444-bc06-bd92af8a8952.'Date Hierarchy'
+
+		annotation SummarizationSetBy = User
+
+	column lDoW
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 23ce632f-8063-4bff-baad-983c7ce1e2c9
+		sourceLineageTag: df26ef9f-7d55-40d8-a77e-be79909160f2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: lDoW
+
+		variation Variation
+			isDefault
+			relationship: 54776ca9-9f84-414b-a196-614853e23a62
+			defaultHierarchy: LocalDateTable_7e74b9e2-e4a5-4c05-8b29-c52b531c8abf.'Date Hierarchy'
+
+		annotation SummarizationSetBy = User
+
+	partition Dates = entity
+		mode: directQuery
+		source
+			entityName: Dates
+			expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	annotation PBI_ResultType = Exception
+

@@ -1,0 +1,65 @@
+table Reports
+	lineageTag: 90c49cea-bf9a-42a0-858d-a38a7e94ba58
+	sourceLineageTag: a70d2714-271a-4fb4-bdef-25a42c03ee19
+
+	column OrganizationId
+		dataType: string
+		isHidden
+		lineageTag: 0274400e-9919-4ed3-873c-52d71b0da44e
+		sourceLineageTag: 6f0a7eca-6b5d-43f2-acf5-5143422b6f2f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: OrganizationId
+
+		annotation SummarizationSetBy = User
+
+	column ReportGuid
+		dataType: string
+		isNullable: false
+		lineageTag: 59314f7e-0b4b-4a08-8c61-33bf5e000c06
+		sourceLineageTag: d04f80ed-b628-4cfc-859b-bd220ce893aa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReportGuid
+
+		annotation SummarizationSetBy = User
+
+	column ReportName
+		dataType: string
+		lineageTag: dc370214-ed64-4391-9507-20834524f6e8
+		sourceLineageTag: 2a1b9eea-cb70-4575-aa1c-e3d83b16f3c1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: ReportName
+
+		annotation SummarizationSetBy = User
+
+	column WorkspaceId
+		dataType: string
+		lineageTag: 16f7187f-b8da-4de9-a3ef-3d2507614da4
+		sourceLineageTag: 0d3e7f72-b7cb-43d0-a775-0bc678f65d8f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: WorkspaceId
+
+		annotation SummarizationSetBy = User
+
+	column IsUsageMetricsReport
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: dc3975c3-f186-4b6c-9d7a-73461080f361
+		sourceLineageTag: aaa9416e-121b-4837-87a4-6d04bb28ee40
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: IsUsageMetricsReport
+
+		annotation SummarizationSetBy = User
+
+	partition Reports = entity
+		mode: directQuery
+		source
+			entityName: Reports
+			expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	annotation PBI_ResultType = Exception
+

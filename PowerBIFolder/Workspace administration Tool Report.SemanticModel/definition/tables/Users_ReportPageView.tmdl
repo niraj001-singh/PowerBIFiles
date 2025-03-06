@@ -1,0 +1,35 @@
+table Users_ReportPageView
+	isHidden
+	lineageTag: a759a9a4-5c51-465f-a9a1-6252fc9364be
+	sourceLineageTag: aa82832b-e2c3-41df-a5e1-2b631cb28b4b
+
+	column UserId
+		dataType: string
+		isHidden
+		lineageTag: 17d531c6-8ea4-475b-844b-dacee6daa8ed
+		sourceLineageTag: 23c49a8a-9c06-4c14-bff0-74b2aae6a09e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UserId
+
+		annotation SummarizationSetBy = User
+
+	column UserKey
+		dataType: string
+		isHidden
+		lineageTag: e91c38fc-0755-4b2e-9823-2dae91677e85
+		sourceLineageTag: 8e72cea5-42ee-44c0-8461-1edfd7f26b9c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: UserKey
+
+		annotation SummarizationSetBy = User
+
+	partition Users_ReportPageView = entity
+		mode: directQuery
+		source
+			entityName: Users_ReportPageView
+			expressionSource: 'DirectQuery to AS - Usage Metrics Report'
+
+	annotation PBI_ResultType = Exception
+

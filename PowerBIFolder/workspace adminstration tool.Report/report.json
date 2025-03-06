@@ -1,0 +1,42 @@
+{
+  "config": "{\"version\":\"5.55\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU06\",\"version\":\"5.55\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"slowDataSourceSettings\":{\"isCrossHighlightingDisabled\":false,\"isSlicerSelectionsButtonEnabled\":false,\"isFilterSelectionsButtonEnabled\":false,\"isFieldWellButtonEnabled\":false,\"isApplyAllButtonEnabled\":false},\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU06",
+            "path": "BaseThemes/CY24SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e156ab50e0835ce1b743",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"715611711d240612d20e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.699088145896656,\"y\":104.07294832826749,\"z\":0,\"width\":1248.8753799392098,\"height\":298.6018237082067}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"reports.value.name\"},{\"queryRef\":\"reports.@odata.context\"},{\"queryRef\":\"reports.value.datasetId\"},{\"queryRef\":\"reports.value.datasetWorkspaceId\"},{\"queryRef\":\"reports.value.embedUrl\"},{\"queryRef\":\"reports.value.id\"},{\"queryRef\":\"reports.value.isFromPbix\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"reports\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"value.name\"},\"Name\":\"reports.value.name\",\"NativeReferenceName\":\"value.name\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"@odata.context\"},\"Name\":\"reports.@odata.context\",\"NativeReferenceName\":\"@odata.context\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"value.datasetId\"},\"Name\":\"reports.value.datasetId\",\"NativeReferenceName\":\"value.datasetId\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"value.datasetWorkspaceId\"},\"Name\":\"reports.value.datasetWorkspaceId\",\"NativeReferenceName\":\"value.datasetWorkspaceId\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"value.embedUrl\"},\"Name\":\"reports.value.embedUrl\",\"NativeReferenceName\":\"value.embedUrl\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"value.id\"},\"Name\":\"reports.value.id\",\"NativeReferenceName\":\"value.id\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"value.isFromPbix\"},\"Name\":\"reports.value.isFromPbix\",\"NativeReferenceName\":\"value.isFromPbix\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 298.60,
+          "width": 1248.88,
+          "x": 10.70,
+          "y": 104.07,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

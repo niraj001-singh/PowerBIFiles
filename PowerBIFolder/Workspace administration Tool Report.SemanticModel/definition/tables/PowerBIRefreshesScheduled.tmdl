@@ -1,0 +1,86 @@
+table PowerBIRefreshesScheduled
+	lineageTag: e6bb2e04-8a4e-4743-b0cb-ae49115ad986
+
+	column _odata_context
+		dataType: string
+		lineageTag: 3020e8d6-ca9b-4422-8937-0654ae6e775b
+		summarizeBy: none
+		sourceColumn: _odata_context
+
+		annotation SummarizationSetBy = Automatic
+
+	column days
+		dataType: string
+		lineageTag: 6ce77dbc-e147-4f23-a462-a16905344b98
+		summarizeBy: none
+		sourceColumn: days
+
+		annotation SummarizationSetBy = Automatic
+
+	column times
+		dataType: string
+		lineageTag: 91ea8b25-365e-404f-9c0c-a75c04a3e69b
+		summarizeBy: none
+		sourceColumn: times
+
+		annotation SummarizationSetBy = Automatic
+
+	column enabled
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d5f5e0c6-6702-4bb2-9cb7-76c1d04081fd
+		summarizeBy: none
+		sourceColumn: enabled
+
+		annotation SummarizationSetBy = Automatic
+
+	column localTimeZoneId
+		dataType: string
+		lineageTag: a99108ae-75e3-40d6-8b4c-8b2f05f6f5eb
+		summarizeBy: none
+		sourceColumn: localTimeZoneId
+
+		annotation SummarizationSetBy = Automatic
+
+	column notifyOption
+		dataType: string
+		lineageTag: 8708f3e5-a54b-4550-a1d4-3bb835350469
+		summarizeBy: none
+		sourceColumn: notifyOption
+
+		annotation SummarizationSetBy = Automatic
+
+	column dataset_id
+		dataType: string
+		lineageTag: de71559b-8db4-40ed-b0ae-49c82efc108f
+		summarizeBy: none
+		sourceColumn: dataset_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column refreshCountPerDay
+		dataType: int64
+		formatString: 0
+		lineageTag: ca1eaa85-c9e5-4bf8-9cee-1148ea0055f9
+		summarizeBy: sum
+		sourceColumn: refreshCountPerDay
+
+		annotation SummarizationSetBy = Automatic
+
+	partition PowerBIRefreshesScheduled = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("MAQ23611\SQLEXPRESS", "AdminGovernanceTool"),
+				  #"Navigation 1" = Source{[Schema = "dbo", Item = "PowerBIRefreshesScheduled"]}[Data],
+				  #"Added custom" = Table.TransformColumnTypes(Table.AddColumn(#"Navigation 1", "refreshCountPerDay", each let
+				  cleanString=Text.Middle([times],1,Text.Length([times])-2),
+				  timeList=Text.Split(cleanString,","),
+				  count=List.Count(timeList)
+				in
+				count), {{"refreshCountPerDay", Int64.Type}})
+				in
+				  #"Added custom"
+
+	annotation PBI_ResultType = Table
+

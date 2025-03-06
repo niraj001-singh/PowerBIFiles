@@ -1,0 +1,77 @@
+table Dates
+	lineageTag: a588d5e0-24a0-42a9-a9cf-89555209c68e
+
+	measure 'YTD Sales' = CALCULATE(SUM(Orders[Sales]),DATESYTD(Orders[Order Date]))
+		formatString: "₹"\ #,0.###############;#,0.###############\ -"₹";"₹"\ #,0.###############
+		lineageTag: 427c7f49-8221-40c1-8f62-7c7839d66873
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-IN"}
+
+	measure 'Sales PY' = CALCULATE([YTD Sales], SAMEPERIODLASTYEAR(Dates[Date]))
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: d3d4ddc6-138e-4bd0-8e54-339504036fdf
+
+	measure '% Sales Growth' =
+			
+			VAR CurrrentYearRevenue = [TotalSales]
+			VAR PreviousYearRevenue = [Sales PY]
+			RETURN
+			IF(
+			    PreviousYearRevenue = 0,
+			    BLANK(),
+			    DIVIDE(CurrrentYearRevenue-PreviousYearRevenue, PreviousYearRevenue)
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 66ed6e15-c6d4-46dd-b034-9853525b4acf
+
+	measure TotalSales = SUM(Orders[Sales])
+		formatString: "₹"\ #,0.00;#,0.00\ -"₹";"₹"\ #,0.00
+		lineageTag: 36156a21-4305-4927-8232-8ff5ecc9a2df
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-IN"}
+
+	measure '% Customer Growth' =
+			
+			VAR CurrrentCustomerCount = [CustomerCount]
+			VAR PreviousCustomerCount = [Customer PY]
+			RETURN
+			IF(
+			    PreviousCustomerCount = 0,
+			    BLANK(),
+			    DIVIDE(CurrrentCustomerCount-PreviousCustomerCount, PreviousCustomerCount)
+			)
+		formatString: #,0.00%;-#,0.00%;#,0.00%
+		lineageTag: e48a808d-6e0f-4cea-93d6-d2f9ac019742
+
+	measure 'Customer PY' = CALCULATE([CustomerCount], SAMEPERIODLASTYEAR(Dates[Date]))
+		lineageTag: 64721c5e-dd55-4bfa-9266-8c13d39655bd
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Date
+		formatString: General Date
+		lineageTag: fd67bbfb-b654-44cb-bd66-7638ad290f9b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: ec2ae675-028f-42e0-a22d-392b0190fd47
+			defaultHierarchy: LocalDateTable_a71237d4-872e-405d-8be0-1044d381b37d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dates = calculated
+		mode: import
+		source = ```
+				
+				CALENDAR (
+				    DATE ( YEAR ( MIN ( Orders[Order Date] ) ), 1, 1 ),
+				    DATE ( YEAR ( MAX ( Orders[Order Date] ) ), 12, 31 )
+				)
+				
+				```
+
+	annotation PBI_Id = 36ce0f43f8694bce92d0103080e4b54e
+

@@ -1,0 +1,50 @@
+table Parameter
+	lineageTag: 2ce0453c-ae15-4cb1-9380-a1db29869df8
+
+	column Parameter
+		lineageTag: a32b1335-21c1-472c-9413-7c72289cae83
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Parameter Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Parameter Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Fields'
+		isHidden
+		lineageTag: 246b5cf9-d11d-46fc-91db-f91d31687bfb
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Parameter Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Parameter Order'
+		isHidden
+		formatString: 0
+		lineageTag: c6c1213d-b207-4c56-89b7-85739e4d6632
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Parameter = calculated
+		mode: import
+		source =
+				{
+				    ("Category", NAMEOF('Orders'[Category]), 0),
+				    ("Country", NAMEOF('Orders'[Country]), 1),
+				    ("Market", NAMEOF('Orders'[Market]), 2),
+				    ("Sales", NAMEOF('Orders'[Sales]), 3)
+				}
+
+	annotation PBI_Id = 7a36bad999e14b0696e2f5248cbaa140
+

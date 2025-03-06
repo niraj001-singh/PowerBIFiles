@@ -1,0 +1,96 @@
+table Sales
+	lineageTag: cb8d0afa-de84-428e-b5f4-86302e0b05fe
+
+	measure 'Sales % All Regions' = DIVIDE(SUM(Sales[Sales]), CALCULATE(SUM(Sales[Sales]), ALL(Region)))
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 850318eb-ef6d-43fe-b12b-77c049ca94cd
+
+	column CustomerStateID
+		dataType: int64
+		isHidden
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 2d53a519-924a-4097-a44b-1465791861a2
+		summarizeBy: none
+		sourceColumn: CustomerStateID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column ProductID
+		dataType: int64
+		isHidden
+		isNullable: false
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 18b8218a-a056-4b8d-a242-f8a13a26f7d3
+		summarizeBy: none
+		sourceColumn: ProductID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		isNullable: false
+		formatString: #,0
+		sourceProviderType: int
+		lineageTag: f4bbfadf-1f9a-4363-bd4e-072fb4c1c699
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Sales = ROUND([Quantity] * [Unit Price], 2)
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: 8261696a-e48b-46ee-9b33-dc1c942ed500
+		summarizeBy: sum
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column 'Unit Price'
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: c787bc10-4310-48e9-a370-10b4ca9f383b
+		summarizeBy: average
+		sourceColumn: Unit Price
+
+		annotation SummarizationSetBy = User
+
+	column OrderDate
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: 0c1dd3fb-bf92-4306-acd8-fcbbcfabddd7
+		summarizeBy: none
+		sourceColumn: OrderDate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Sales-a32f8d32-27b5-4a46-882d-0ccde230c7f1 = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents(DataFilePath), null, true),
+				    dbo_Sales_Table = Source{[Item="dbo_Sales",Kind="Table"]}[Data],
+				    #"Changed Type" = Table.TransformColumnTypes(dbo_Sales_Table,{{"OrderNumber", type text}, {"OrderDate", type date}, {"ShipDate", type date}, {"CustomerStateID", Int64.Type}, {"ProductID", Int64.Type}, {"Quantity", Int64.Type}, {"UnitPrice", Currency.Type}, {"DiscountAmount", Currency.Type}, {"PromotionCode", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"OrderNumber", "ShipDate", "DiscountAmount", "PromotionCode"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Removed Columns",{{"UnitPrice", "Unit Price"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
