@@ -16,39 +16,50 @@ jobs:
       - name: Authenticate with Azure and Get Access Token
         id: get_token
         run: |
-          set -e
           RESPONSE=$(curl -s -X POST "https://login.microsoftonline.com/${{ secrets.POWERBI_TENANT_ID }}/oauth2/v2.0/token" \
           -H "Content-Type: application/x-www-form-urlencoded" \
           -d "grant_type=client_credentials" \
           -d "client_id=${{ secrets.POWERBI_CLIENT_ID }}" \
           -d "client_secret=${{ secrets.POWERBI_CLIENT_SECRET }}" \
-          -d "scope=https://analysis.windows.net/powerbi/api/.default") || { echo "Error: Failed to authenticate with Azure"; exit 1; }
+          -d "scope=https://api.fabric.microsoft.com/.default")
 
           TOKEN=$(echo $RESPONSE | jq -r '.access_token')
 
+          # Print full token (For debugging - Remove this in production)
+          echo "Full Access Token: $TOKEN"
+
+          # Mask the token for security in logs
+          echo "::add-mask::$TOKEN"
+
+          # Store the token in GitHub environment variables
+          echo "ACCESS_TOKEN=$TOKEN" >> $GITHUB_ENV
+
+          # Validate if the token is empty or invalid
           if [[ -z "$TOKEN" || "$TOKEN" == "null" ]]; then
-            echo "Error: Failed to retrieve access token"
+            echo "Error: Failed to retrieve a valid token"
             echo "Response: $RESPONSE"
             exit 1
           fi
 
-          echo "::add-mask::$TOKEN"  # Mask token for security
-          echo "ACCESS_TOKEN=$TOKEN" >> $GITHUB_ENV
-
-      - name: Fetch Workspace Head and Remote Commit Hash
-        id: fetch_git_status
+      - name: Fetch Workspace Git Status
+        id: get_git_status
         run: |
-          set -e
           STATUS_RESPONSE=$(curl -s -X GET "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.POWERBI_WORKSPACE_ID }}/git/status" \
           -H "Authorization: Bearer $ACCESS_TOKEN" \
-          -H "Content-Type: application/json") || { echo "Error: Failed to fetch Git status"; exit 1; }
+          -H "Content-Type: application/json")
+
+          echo "Git Status Response: $STATUS_RESPONSE"
 
           WORKSPACE_HEAD=$(echo $STATUS_RESPONSE | jq -r '.workspaceHead')
           REMOTE_COMMIT_HASH=$(echo $STATUS_RESPONSE | jq -r '.remoteCommitHash')
 
-          if [[ -z "$WORKSPACE_HEAD" || "$WORKSPACE_HEAD" == "null" || -z "$REMOTE_COMMIT_HASH" || "$REMOTE_COMMIT_HASH" == "null" ]]; then
-            echo "Error: Failed to retrieve workspaceHead or remoteCommitHash"
-            echo "Response: $STATUS_RESPONSE"
+          if [[ -z "$WORKSPACE_HEAD" || "$WORKSPACE_HEAD" == "null" ]]; then
+            echo "Error: Failed to fetch workspace head"
+            exit 1
+          fi
+
+          if [[ -z "$REMOTE_COMMIT_HASH" || "$REMOTE_COMMIT_HASH" == "null" ]]; then
+            echo "Error: Failed to fetch remote commit hash"
             exit 1
           fi
 
@@ -57,24 +68,22 @@ jobs:
 
       - name: Trigger Power BI Update from Git
         run: |
-          set -e
-          UPDATE_RESPONSE=$(curl -s -X POST "https://api.powerbi.com/v1.0/myorg/groups/${{ secrets.POWERBI_WORKSPACE_ID }}/updateFromGit" \
+          UPDATE_RESPONSE=$(curl -s -X POST "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.POWERBI_WORKSPACE_ID }}/git/updateFromGit" \
           -H "Authorization: Bearer $ACCESS_TOKEN" \
           -H "Content-Type: application/json" \
-          -d "{
-                \"workspaceHead\": \"$WORKSPACE_HEAD\",
-                \"remoteCommitHash\": \"$REMOTE_COMMIT_HASH\",
-                \"options\": {
-                  \"allowOverrideItems\": true
+          -d '{
+                "workspaceHead": "'"$WORKSPACE_HEAD"'",
+                "remoteCommitHash": "'"$REMOTE_COMMIT_HASH"'",
+                "options": {
+                  "allowOverrideItems": true
                 }
-              }") || { echo "Error: Failed to update Power BI from Git"; exit 1; }
+              }')
 
-          ERROR_MESSAGE=$(echo $UPDATE_RESPONSE | jq -r '.error.message // empty')
+          echo "Update Response: $UPDATE_RESPONSE"
 
-          if [[ -n "$ERROR_MESSAGE" ]]; then
-            echo "Error: Power BI update failed - $ERROR_MESSAGE"
-            echo "Response: $UPDATE_RESPONSE"
+          # Check for errors
+          ERROR_MESSAGE=$(echo $UPDATE_RESPONSE | jq -r '.error.message')
+          if [[ -n "$ERROR_MESSAGE" && "$ERROR_MESSAGE" != "null" ]]; then
+            echo "Error: $ERROR_MESSAGE"
             exit 1
           fi
-
-          echo "Power BI update triggered successfully!"
