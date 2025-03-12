@@ -1,0 +1,91 @@
+table forecast
+	lineageTag: 1833252c-bfc5-4823-8cc2-22c4bde005ba
+
+	column ProductID
+		dataType: int64
+		formatString: 0
+		lineageTag: 2455c8c9-1e76-4c18-94db-9d7e89cf2d29
+		summarizeBy: count
+		sourceColumn: ProductID
+
+		annotation SummarizationSetBy = Automatic
+
+	column StoreID
+		dataType: int64
+		formatString: 0
+		lineageTag: 22dce6b9-92d4-4558-9148-bbf265145410
+		summarizeBy: none
+		sourceColumn: StoreID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: c4ab83e5-4d89-4900-a273-403a004c51db
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column ID
+		dataType: double
+		lineageTag: 9c33158e-3e54-4f13-975a-52ea6f46ad15
+		summarizeBy: count
+		sourceColumn: ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Unit
+		dataType: int64
+		formatString: 0
+		lineageTag: 5d164985-31ac-40d1-bcf4-0c29439269da
+		summarizeBy: sum
+		sourceColumn: Unit
+
+		annotation SummarizationSetBy = Automatic
+
+	column Amount
+		dataType: int64
+		formatString: 0
+		lineageTag: b662eb80-5bfa-46b0-9e54-083b25d5dde9
+		summarizeBy: sum
+		sourceColumn: Amount
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 567caeb3-729e-43da-896b-fce7e7796525
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: string
+		lineageTag: 4a4b66d3-3e75-4c0b-ba31-6498ea2b3dd0
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: 44c25d58-f315-4903-b420-b3842716d102
+		summarizeBy: sum
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = Automatic
+
+	partition forecast = query
+		mode: import
+		source
+			query = SELECT * FROM [forecast]
+			dataSource: SampleTest
+
+	annotation PBI_ResultType = Table
+
