@@ -1,0 +1,35 @@
+name: Update Power BI Dataset
+
+on:
+  push:
+    branches:
+      - main  # Change this to your branch if needed
+
+jobs:
+  update-powerbi:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Authenticate with Azure and Get Access Token
+        id: get_token
+        run: |
+          RESPONSE=$(curl -X POST "https://login.microsoftonline.com/${{ secrets.POWERBI_TENANT_ID }}/oauth2/v2.0/token" \
+          -H "Content-Type: application/x-www-form-urlencoded" \
+          -d "grant_type=client_credentials" \
+          -d "client_id=${{ secrets.POWERBI_CLIENT_ID }}" \
+          -d "client_secret=${{ secrets.POWERBI_CLIENT_SECRET }}" \
+          -d "scope=https://graph.microsoft.com/.default")
+          
+          TOKEN=$(echo $RESPONSE | jq -r '.access_token')
+          
+          echo "::add-mask::$TOKEN"  # Mask the token for security
+          echo "ACCESS_TOKEN=$TOKEN" >> $GITHUB_ENV
+
+      - name: Trigger Power BI Update
+        run: |
+          curl -X POST "https://api.powerbi.com/v1.0/myorg/groups/${{ secrets.POWERBI_WORKSPACE_ID }}/updateGitDataset" \
+          -H "Authorization: Bearer $ACCESS_TOKEN" \
+          -H "Content-Type: application/json"
