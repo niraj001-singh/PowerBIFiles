@@ -16,68 +16,68 @@ jobs:
       - name: Authenticate with Azure and Get Access Token
         id: get_token
         run: |
-          RESPONSE=$(curl -s -X POST "https://login.microsoftonline.com/${{ secrets.POWERBI_TENANT_ID }}/oauth2/v2.0/token" \
-          -H "Content-Type: application/x-www-form-urlencoded" \
-          -d "grant_type=client_credentials" \
-          -d "client_id=${{ secrets.POWERBI_CLIENT_ID }}" \
-          -d "client_secret=${{ secrets.POWERBI_CLIENT_SECRET }}" \
-          -d "scope=https://api.fabric.microsoft.com/.default")
-
-          TOKEN=$(echo $RESPONSE | jq -r '.access_token')
-
-          # Print the raw response for debugging
-          echo "Raw Response: $RESPONSE"
-
-          # 🔥 Workaround: Save token to file to bypass GitHub masking
-          echo "$TOKEN" > token.txt
-          cat token.txt
-
-          # 🔥 Workaround: Base64 encode token (GitHub does NOT mask this)
-          TOKEN_B64=$(echo -n "$TOKEN" | base64)
-          echo "Base64 Encoded Token: $TOKEN_B64"
-
-          # 🔥 Workaround: Print token with character spacing to bypass masking
-          echo "Token with Spacing: $(echo $TOKEN | sed 's/\(.\)/\1 /g')"
-
-          # Store token for later use
-          echo "ACCESS_TOKEN=$TOKEN" >> $GITHUB_ENV
-
-          # Validate if the token is empty or invalid
-          if [[ -z "$TOKEN" || "$TOKEN" == "null" ]]; then
-            echo "Error: Failed to retrieve a valid token"
-            echo "Response: $RESPONSE"
-            exit 1
-          fi
+          python3 - <<EOF
+          import requests
+          import os
+          
+          tenant_id = os.environ['POWERBI_TENANT_ID']
+          client_id = os.environ['POWERBI_CLIENT_ID']
+          client_secret = os.environ['POWERBI_CLIENT_SECRET']
+          scope = "https://api.fabric.microsoft.com/.default"
+          
+          url = f"https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/token"
+          data = {
+              "grant_type": "client_credentials",
+              "client_id": client_id,
+              "client_secret": client_secret,
+              "scope": scope
+          }
+          
+          headers = {"Content-Type": "application/x-www-form-urlencoded"}
+          response = requests.post(url, data=data, headers=headers)
+          token_data = response.json()
+          
+          if 'access_token' not in token_data:
+              print("Error: Failed to retrieve access token", token_data)
+              exit(1)
+          
+          print(f"::add-mask::{token_data['access_token']}")
+          print(f"::set-output name=ACCESS_TOKEN::{token_data['access_token']}")
+          EOF
+        env:
+          POWERBI_TENANT_ID: ${{ secrets.POWERBI_TENANT_ID }}
+          POWERBI_CLIENT_ID: ${{ secrets.POWERBI_CLIENT_ID }}
+          POWERBI_CLIENT_SECRET: ${{ secrets.POWERBI_CLIENT_SECRET }}
 
       - name: Fetch Workspace Git Status
         id: get_git_status
         run: |
           STATUS_RESPONSE=$(curl -s -X GET "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.POWERBI_WORKSPACE_ID }}/git/status" \
-          -H "Authorization: Bearer $ACCESS_TOKEN" \
+          -H "Authorization: Bearer ${{ steps.get_token.outputs.ACCESS_TOKEN }}" \
           -H "Content-Type: application/json")
-
+          
           echo "Git Status Response: $STATUS_RESPONSE"
-
+          
           WORKSPACE_HEAD=$(echo $STATUS_RESPONSE | jq -r '.workspaceHead')
           REMOTE_COMMIT_HASH=$(echo $STATUS_RESPONSE | jq -r '.remoteCommitHash')
-
+          
           if [[ -z "$WORKSPACE_HEAD" || "$WORKSPACE_HEAD" == "null" ]]; then
             echo "Error: Failed to fetch workspace head"
             exit 1
           fi
-
+          
           if [[ -z "$REMOTE_COMMIT_HASH" || "$REMOTE_COMMIT_HASH" == "null" ]]; then
             echo "Error: Failed to fetch remote commit hash"
             exit 1
           fi
-
+          
           echo "WORKSPACE_HEAD=$WORKSPACE_HEAD" >> $GITHUB_ENV
           echo "REMOTE_COMMIT_HASH=$REMOTE_COMMIT_HASH" >> $GITHUB_ENV
 
       - name: Trigger Power BI Update from Git
         run: |
           UPDATE_RESPONSE=$(curl -s -X POST "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.POWERBI_WORKSPACE_ID }}/git/updateFromGit" \
-          -H "Authorization: Bearer $ACCESS_TOKEN" \
+          -H "Authorization: Bearer ${{ steps.get_token.outputs.ACCESS_TOKEN }}" \
           -H "Content-Type: application/json" \
           -d '{
                 "workspaceHead": "'"$WORKSPACE_HEAD"'",
@@ -86,10 +86,9 @@ jobs:
                   "allowOverrideItems": true
                 }
               }')
-
+          
           echo "Update Response: $UPDATE_RESPONSE"
-
-          # Check for errors
+          
           ERROR_MESSAGE=$(echo $UPDATE_RESPONSE | jq -r '.error.message')
           if [[ -n "$ERROR_MESSAGE" && "$ERROR_MESSAGE" != "null" ]]; then
             echo "Error: $ERROR_MESSAGE"
