@@ -1,8 +1,0 @@
-relationship AutoDetected_f5f5aeb5-26c1-4687-861d-441cf0d006cc
-	fromColumn: forecast.StoreID
-	toColumn: store.StoreID
-
-relationship AutoDetected_5e0e3995-c42a-4c39-b1ed-e07e07e1451e
-	fromColumn: sales.StoreID
-	toColumn: store.StoreID
-
