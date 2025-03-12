@@ -1,5 +1,0 @@
-/// A data source definition that uses SQL Server Authentication for authentication against SQL Server.
-dataSource SampleTest = provider
-	connectionString: Provider=SQLNCLI11;Data Source=localhost;Database=Clinet1_Database;User ID=sa;Persist Security Info=false
-	impersonationMode: impersonateCurrentUser
-
