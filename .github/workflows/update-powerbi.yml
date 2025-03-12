@@ -25,11 +25,11 @@ jobs:
           
           TOKEN=$(echo $RESPONSE | jq -r '.access_token')
           
-          # echo "::add-mask::$TOKEN"  # Mask the token for security
+          echo "::add-mask::$TOKEN"  # Mask the token for security
           echo "ACCESS_TOKEN=$TOKEN" >> $GITHUB_ENV
 
       - name: Trigger Power BI Update
         run: |
-          curl -X POST "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.POWERBI_WORKSPACE_ID }}/git/updateFromGit" \
+          curl -X POST "https://api.fabric.microsoft.com/v1/workspaces/3bf5b678-13cd-4ffe-bdbb-28941f9d30d6/git/updateFromGit" \
           -H "Authorization: Bearer $ACCESS_TOKEN" \
           -H "Content-Type: application/json"
