@@ -25,11 +25,8 @@ jobs:
 
           TOKEN=$(echo $RESPONSE | jq -r '.access_token')
 
-          # Print full token (For debugging - Remove this in production)
+          # ⚠ Print full token (Be careful with this)
           echo "Full Access Token: $TOKEN"
-
-          # Mask the token for security in logs
-          echo "::add-mask::$TOKEN"
 
           # Store the token in GitHub environment variables
           echo "ACCESS_TOKEN=$TOKEN" >> $GITHUB_ENV
