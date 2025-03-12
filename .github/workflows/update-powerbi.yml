@@ -42,7 +42,7 @@ jobs:
           -H "Content-Type: application/json" \
           -d '{
                 "workspaceHead": "${{ secrets.POWERBI_WORKSPACE_HEAD }}",
-                "remoteCommitHash": "'"${LATEST_COMMIT_HASH}"'",
+                "remoteCommitHash": "4951b73ef8a20f9add22c8777479f6aa2977fca7",
                 "options": {
                   "allowOverrideItems": true
                 }
