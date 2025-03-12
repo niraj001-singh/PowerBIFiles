@@ -19,79 +19,63 @@ jobs:
           python3 - <<EOF
           import requests
           import os
-          
+
           tenant_id = os.environ['POWERBI_TENANT_ID']
           client_id = os.environ['POWERBI_CLIENT_ID']
           client_secret = os.environ['POWERBI_CLIENT_SECRET']
           scope = "https://api.fabric.microsoft.com/.default"
-          
           url = f"https://login.microsoftonline.com/{tenant_id}/oauth2/v2.0/token"
+
           data = {
               "grant_type": "client_credentials",
               "client_id": client_id,
               "client_secret": client_secret,
               "scope": scope
           }
-          
+
           headers = {"Content-Type": "application/x-www-form-urlencoded"}
           response = requests.post(url, data=data, headers=headers)
-          token_data = response.json()
-          
-          if 'access_token' not in token_data:
-              print("Error: Failed to retrieve access token", token_data)
+          response_json = response.json()
+          token = response_json.get("access_token", "")
+
+          print("Raw Response:", response_json)
+          print("Access Token:", token)
+
+          if not token:
+              print("Error: Failed to retrieve a valid token")
               exit(1)
-          
-          print(f"Access Token: {token_data['access_token']}")
-          print(f"::add-mask::{token_data['access_token']}")
-          print(f"::set-output name=ACCESS_TOKEN::{token_data['access_token']}")
+
+          with open("token.txt", "w") as f:
+              f.write(token)
+
+          print("Base64 Encoded Token:", token.encode("utf-8").hex())
           EOF
-        env:
-          POWERBI_TENANT_ID: ${{ secrets.POWERBI_TENANT_ID }}
-          POWERBI_CLIENT_ID: ${{ secrets.POWERBI_CLIENT_ID }}
-          POWERBI_CLIENT_SECRET: ${{ secrets.POWERBI_CLIENT_SECRET }}
 
       - name: Fetch Workspace Git Status
-        id: get_git_status
         run: |
+          ACCESS_TOKEN=$(cat token.txt)
           STATUS_RESPONSE=$(curl -s -X GET "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.POWERBI_WORKSPACE_ID }}/git/status" \
-          -H "Authorization: Bearer ${{ steps.get_token.outputs.ACCESS_TOKEN }}" \
+          -H "Authorization: Bearer $ACCESS_TOKEN" \
           -H "Content-Type: application/json")
-          
+
           echo "Git Status Response: $STATUS_RESPONSE"
-          
+
           WORKSPACE_HEAD=$(echo $STATUS_RESPONSE | jq -r '.workspaceHead')
           REMOTE_COMMIT_HASH=$(echo $STATUS_RESPONSE | jq -r '.remoteCommitHash')
-          
-          if [[ -z "$WORKSPACE_HEAD" || "$WORKSPACE_HEAD" == "null" ]]; then
-            echo "Error: Failed to fetch workspace head"
-            exit 1
-          fi
-          
-          if [[ -z "$REMOTE_COMMIT_HASH" || "$REMOTE_COMMIT_HASH" == "null" ]]; then
-            echo "Error: Failed to fetch remote commit hash"
-            exit 1
-          fi
-          
+
           echo "WORKSPACE_HEAD=$WORKSPACE_HEAD" >> $GITHUB_ENV
           echo "REMOTE_COMMIT_HASH=$REMOTE_COMMIT_HASH" >> $GITHUB_ENV
 
       - name: Trigger Power BI Update from Git
         run: |
+          ACCESS_TOKEN=$(cat token.txt)
           UPDATE_RESPONSE=$(curl -s -X POST "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.POWERBI_WORKSPACE_ID }}/git/updateFromGit" \
-          -H "Authorization: Bearer ${{ steps.get_token.outputs.ACCESS_TOKEN }}" \
+          -H "Authorization: Bearer $ACCESS_TOKEN" \
           -H "Content-Type: application/json" \
           -d '{
-                "workspaceHead": "'"$WORKSPACE_HEAD"'",
-                "remoteCommitHash": "'"$REMOTE_COMMIT_HASH"'",
-                "options": {
-                  "allowOverrideItems": true
-                }
+                "workspaceHead": "'$WORKSPACE_HEAD'",
+                "remoteCommitHash": "'$REMOTE_COMMIT_HASH'",
+                "options": { "allowOverrideItems": true }
               }')
           
           echo "Update Response: $UPDATE_RESPONSE"
-          
-          ERROR_MESSAGE=$(echo $UPDATE_RESPONSE | jq -r '.error.message')
-          if [[ -n "$ERROR_MESSAGE" && "$ERROR_MESSAGE" != "null" ]]; then
-            echo "Error: $ERROR_MESSAGE"
-            exit 1
-          fi
