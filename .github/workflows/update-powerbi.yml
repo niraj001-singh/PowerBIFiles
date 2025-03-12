@@ -18,7 +18,6 @@ jobs:
         run: |
           python - <<EOF
           import requests
-          import os
 
           tenant_id = "${{ secrets.POWERBI_TENANT_ID }}"
           client_id = "${{ secrets.POWERBI_CLIENT_ID }}"
@@ -41,8 +40,9 @@ jobs:
 
           if "access_token" in token_data:
               token = token_data["access_token"]
-              print(f"::add-mask::{token}")  # Masking the token for security
-              print(f"::set-output name=ACCESS_TOKEN::{token}")
+              with open("token.txt", "w") as f:
+                  f.write(token)
+              print("Token saved to token.txt")
           else:
               print("Error retrieving token", token_data)
               exit(1)
@@ -52,7 +52,7 @@ jobs:
         id: get_git_status
         run: |
           STATUS_RESPONSE=$(curl -s -X GET "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.POWERBI_WORKSPACE_ID }}/git/status" \
-          -H "Authorization: Bearer ${{ steps.get_token.outputs.ACCESS_TOKEN }}" \
+          -H "Authorization: Bearer $(cat token.txt)" \
           -H "Content-Type: application/json")
 
           echo "Git Status Response: $STATUS_RESPONSE"
@@ -76,7 +76,7 @@ jobs:
       - name: Trigger Power BI Update from Git
         run: |
           UPDATE_RESPONSE=$(curl -s -X POST "https://api.fabric.microsoft.com/v1/workspaces/${{ secrets.POWERBI_WORKSPACE_ID }}/git/updateFromGit" \
-          -H "Authorization: Bearer ${{ steps.get_token.outputs.ACCESS_TOKEN }}" \
+          -H "Authorization: Bearer $(cat token.txt)" \
           -H "Content-Type: application/json" \
           -d '{
                 "workspaceHead": "'$WORKSPACE_HEAD'",
