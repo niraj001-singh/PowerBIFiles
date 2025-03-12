@@ -41,6 +41,7 @@ jobs:
               print("Error: Failed to retrieve access token", token_data)
               exit(1)
           
+          print(f"Access Token: {token_data['access_token']}")
           print(f"::add-mask::{token_data['access_token']}")
           print(f"::set-output name=ACCESS_TOKEN::{token_data['access_token']}")
           EOF
