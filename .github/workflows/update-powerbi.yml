@@ -15,10 +15,7 @@ jobs:
 
       - name: Get Latest Commit Hash
         id: get_commit
-         run: |
-          LATEST_COMMIT_HASH=$(git rev-parse HEAD)
-          echo "Latest Commit Hash: $LATEST_COMMIT_HASH"
-          echo "LATEST_COMMIT_HASH=$LATEST_COMMIT_HASH" >> $GITHUB_ENV
+        run: echo "LATEST_COMMIT_HASH=$(git rev-parse HEAD)" >> $GITHUB_ENV
 
       - name: Authenticate with Azure and Get Access Token
         id: get_token
